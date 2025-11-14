@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrated Engineering Services | Ratm Al-Memar Contracting</title>
+    <meta name="description"
+        content="Ratm Al-Memar's comprehensive general contractor services: Civil works, Mechanical systems, Electrical systems, and Final Finishing.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Additional styles for the Services page */
+        .service-category-card {
+            background-color: var(--nav-bg);
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--primary-color);
+            /* Changed to border-left for LTR */
+            transition: border-left-color 0.3s;
+        }
+
+        .service-category-card:hover {
+            border-left-color: var(--accent-color);
+        }
+
+        .service-category-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+
+        .service-list {
+            list-style: none;
+            padding-left: 0;
+            /* Changed to padding-left for LTR */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px 30px;
+            margin-top: 20px;
+        }
+
+        .service-list li {
+            color: var(--text-light);
+            font-size: 1em;
+            display: flex;
+            align-items: flex-start;
+            text-align: left;
+            /* Aligns text left for LTR */
+        }
+
+        .service-list li i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            /* Changed to margin-right for LTR */
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-container">
+            <!-- 1. Logo -->
+            <div class="logo header-logo">
+                <a href="en_home.html">
+                    <img src="images/ratm-logo.png" alt="Ratm Al-Memar Contracting Company Logo"
+                        style="height: 40px; width: auto;">
+                    <span>Ratm Al-Memar Contracting Co.</span>
+                </a>
+            </div>
+
+            <!-- 2. Hamburger Menu -->
+            <button class="hamburger-menu" aria-label="Toggle Navigation"><span class="bar"></span><span
+                    class="bar"></span><span class="bar"></span></button>
+
+            <!-- 3. Main Navigation -->
+            <div class="main-nav-wrapper">
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="en_home.html">Home</a></li>
+                        <!-- <li><a href="en_solutions.html">Solutions</a></li> -->
+                        <li><a href="en_projects.html">Projects</a></li>
+                        <li class="active"><a href="en_services.html">Services</a></li>
+                        <li><a href="en_about.html">About Us</a></li>
+                        <!-- <li><a href="en_blog.html">Blog</a></li> -->
+                        <li><a href="en_contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions-group">
+                    <a href="ar_services.html" class="lang-btn">العربية</a>
+                    <!-- <a href="en_contact.html" class="consultation-btn">Free Consultation</a> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div id="particles-js"></div>
+        <section class="page-section" style="padding-top: 120px;">
+            <div class="container">
+                <h1 style="text-align: center;">Comprehensive General Contractor Services (MEP & Civil)</h1>
+                <p style="text-align: center; max-width: 900px; margin: 0 auto 50px auto; color: var(--heading-color);">
+                    We provide integrated engineering services covering the project from inception to final handover,
+                    guaranteeing efficiency and quality.
+                </p>
+
+                <!-- 1. Civil & Structural Works -->
+                <div class="service-category-card">
+                    <h3 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 10px;"><i
+                            class="fas fa-city" style="margin-right: 10px;"></i> I. Civil & Structural Works</h3>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Excavation & Backfilling</li>
+                        <li><i class="fas fa-check-circle"></i> Reinforced Concrete Works (Foundations, Columns, Slabs)
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> Block & Masonry Works</li>
+                    </ul>
+                </div>
+
+                <!-- 2. Integrated Mechanical Systems -->
+                <div class="service-category-card">
+                    <h3 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 10px;"><i
+                            class="fas fa-cogs" style="margin-right: 10px;"></i> II. Integrated Mechanical Systems
+                        (Mechanical & Fire)</h3>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> HVAC Systems (Air Conditioning & Ventilation)</li>
+                        <li><i class="fas fa-check-circle"></i> Plumbing Systems (Water Supply & Drainage)</li>
+                        <li><i class="fas fa-check-circle"></i> Fire-Fighting Systems (UL/FM Pumps & Sprinklers)</li>
+                        <li><i class="fas fa-check-circle"></i> Fire Detection & Alarm Systems</li>
+                        <li><i class="fas fa-check-circle"></i> Smoke Management System</li>
+                    </ul>
+                </div>
+
+                <!-- 3. Electrical & Control Systems -->
+                <div class="service-category-card">
+                    <h3 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 10px;"><i
+                            class="fas fa-bolt" style="margin-right: 10px;"></i> III. Electrical & Control Systems
+                        (Electrical & Low Current)</h3>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Electrical Systems (Power, Lighting, Grounding)</li>
+                        <li><i class="fas fa-check-circle"></i> Low Current Systems (CCTV, Data Networks, Telephone)
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> Building Management System (BMS)</li>
+                        <li><i class="fas fa-check-circle"></i> Access Control & Security Systems</li>
+                    </ul>
+                </div>
+
+                <!-- 4. Finishing & Insulation Works -->
+                <div class="service-category-card">
+                    <h3 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 10px;"><i
+                            class="fas fa-paint-roller" style="margin-right: 10px;"></i> IV. Finishing & Insulation
+                        Works
+                        (Finishing & Aesthetic)</h3>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Waterproofing & Thermal Insulation Works</li>
+                        <li><i class="fas fa-check-circle"></i> Flooring & Wall Finishes (Tiles, Marble, Paints)</li>
+                        <li><i class="fas fa-check-circle"></i> False Ceiling Works (Gypsum & Metal Ceilings)</li>
+                        <li><i class="fas fa-check-circle"></i> Doors & Windows Works (Aluminum, Glass, Wooden)</li>
+                    </ul>
+                </div>
+
+                <!-- Preventive Maintenance Section (Added Value) -->
+                <div class="service-category-card" style="border-left-color: var(--accent-color);">
+                    <h3 style="border-bottom: 2px solid var(--primary-color); padding-bottom: 10px;"><i
+                            class="fas fa-shield-alt" style="margin-right: 10px;"></i> Added Value: Annual Preventive
+                        Maintenance Contracts</h3>
+                    <p>Our team specializes in comprehensive maintenance contracts for HVAC and Electrical systems,
+                        guaranteeing a **rapid response time of no more than 4 hours** for critical failures in vital
+                        facilities (malls and hospitals).</p>
+                    <a href="en_contact.html" class="btn-primary" style="margin-top: 20px; text-align: center;">
+                        Request A Maintenance Quote
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- Floating Contact Buttons -->
+    <div class="fixed-contact-buttons">
+        <!-- WhatsApp Button (Using Emergency Number) -->
+        <a href="https://wa.me/966500406056" target="_blank" class="floating-btn whatsapp-btn" aria-label="WhatsApp Us">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <!-- Phone Button (Using Office Number) -->
+        <a href="tel:+966592862546" class="floating-btn phone-btn" aria-label="Call Us">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Ratm Al-Memar Contracting Co.</h3>
+                    <p>We transform ambitious construction ideas into reality. Excellence in engineering and trust in
+                        execution.</p>
+                    <div class="footer-social-links" style="direction: ltr; margin-top: 15px;">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul style="padding-left: 0;">
+                        <li><a href="en_solutions.html">Solutions</a></li>
+                        <li><a href="en_projects.html">Projects</a></li>
+                        <li><a href="en_services.html">Services</a></li>
+                        <li><a href="en_about.html">About Us</a></li>
+                        <li><a href="en_contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-contact-info" style="text-align: left;">
+                    <h3>Contact Information</h3>
+                    <p style="justify-content: flex-start;"><i class="fas fa-map-marker-alt"></i><span
+                            style="margin-left: 10px;">Riyadh, Saudi
+                            Arabia</span></p>
+                    <p style="justify-content: flex-start;"><i class="fas fa-phone-alt"></i><span
+                            style="margin-left: 10px;">+966 500 406 056</span> <i class="fas fa-phone-alt"></i></p>
+                    <p style="justify-content: flex-start;"><i class="fas fa-envelope"></i><span
+                            style="margin-left: 10px;">info@ratmelmemar.com</span>
+                        <i class="fas fa-envelope"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; <span id="current-year">2024</span> Ratm Al-Memar Contracting Co. All rights reserved.
+                <p class="designer-note">Designed and Developed by [Your Name/Company]</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

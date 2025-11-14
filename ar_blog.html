@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدونة | شركة رتم المعمار للمقاولات</title>
+    <meta name="description" content="مقالات متخصصة في الهندسة الحديثة، المقاولات، الجودة، ونظام العمل المبتكر لشركة رتم المعمار.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <!-- 1. الشعار -->
+            <div class="logo header-logo">
+                <a href="index.html">
+                    <img src="images/ratm-logo.png" alt="شعار شركة رتم المعمار للمقاولات" style="height: 40px; width: auto;">
+                    <span>شركة رتم المعمار للمقاولات</span>
+                </a>
+            </div>
+            
+            <!-- 2. زر الهامبرغر -->
+            <button class="hamburger-menu" aria-label="Toggle Navigation"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            
+            <!-- 3. القائمة الرئيسية -->
+            <div class="main-nav-wrapper">
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="ar_solutions.html">حلولنا</a></li>
+                        <li><a href="ar_projects.html">مشاريعنا</a></li>
+                        <li><a href="ar_services.html">خدماتنا</a></li>
+                        <li><a href="ar_about.html">من نحن</a></li>
+                        <li class="active"><a href="ar_blog.html">المدونة</a></li>
+                        <li><a href="ar_contact.html">اتصل بنا</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions-group">
+                    <a href="en_blog.html" class="lang-btn">English</a>
+                    <!-- <a href="ar_contact.html" class="consultation-btn">طلب استشارة مجانية</a> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="particles-js"></div>
+        <section class="article-header-wrapper">
+            <div class="container">
+                <h1 style="text-align: center; color: var(--primary-color);">مدونة رتم المعمار: رؤى هندسية</h1>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 0 auto; color: var(--text-light);">
+                    تحليل معمق لأحدث التطورات في المقاولات العامة، التكامل الهندسي (MEP)، والجودة المستدامة.
+                </p>
+            </div>
+        </section>
+
+        <!-- Blog Posts Section -->
+        <section class="page-section" style="background-color: var(--bg-dark);">
+            <div class="container">
+                
+                <div class="posts-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+                    
+                    <!-- Post Card 1: المقال الجديد - التكامل الهندسي و BIM -->
+                    <div class="post-card" style="background-color: var(--nav-bg); border-radius: 10px; overflow: hidden;">
+                        <img src="images/blog-bim-integration.jpg" alt="تكامل تقنية BIM في الإنشاءات" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div class="post-content" style="padding: 20px; text-align: right;">
+                            <span style="color: var(--accent-color); font-size: 0.9em;">20 نوفمبر 2024</span>
+                            <h3 style="color: var(--primary-color); margin-top: 5px; margin-bottom: 10px;">BIM و (MEP): مفتاح رتم المعمار لتسليم مشروع بلا تضاربات</h3>
+                            <p style="color: var(--text-light); font-size: 1em; line-height: 1.5;">كيف تضمن نمذجة معلومات البناء (BIM) التنسيق المثالي بين الأعمال المدنية والميكانيكية والكهربائية في مشاريعنا الكبرى...</p>
+                            <a href="ar_article_bim_mep.html" class="btn-secondary" style="background-color: var(--primary-color); color: var(--bg-dark); padding: 8px 15px; font-size: 0.9em; margin-top: 10px;">اقرأ المقال</a>
+                        </div>
+                    </div>
+
+                    <!-- Post Card 2: مقال عن الصيانة وسرعة الاستجابة -->
+                    <div class="post-card" style="background-color: var(--nav-bg); border-radius: 10px; overflow: hidden;">
+                        <img src="images/blog-rapid-response.jpg" alt="فريق صيانة سريع" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div class="post-content" style="padding: 20px; text-align: right;">
+                            <span style="color: var(--accent-color); font-size: 0.9em;">05 نوفمبر 2024</span>
+                            <h3 style="color: var(--primary-color); margin-top: 5px; margin-bottom: 10px;">لماذا يجب أن تكون سرعة الاستجابة أولويتك في عقود الصيانة السنوية؟</h3>
+                            <p style="color: var(--text-light); font-size: 1em; line-height: 1.5;">تحليل لكيفية تأثير وقت الاستجابة (4 ساعات) على استمرارية العمل في المرافق التجارية والمستشفيات...</p>
+                            <a href="#" class="btn-secondary" style="background-color: var(--primary-color); color: var(--bg-dark); padding: 8px 15px; font-size: 0.9em; margin-top: 10px;">قريباً</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+<footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>شركة رتم المعمار للمقاولات</h3>
+                    <p>نحن نحول الأفكار الإنشائية الطموحة إلى حقيقة. تميز في الهندسة والثقة في التنفيذ.</p>
+                    <div class="footer-social-links" style="direction: rtl; margin-top: 15px;">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul style="padding-right: 0;">
+                        <li><a href="ar_solutions.html">حلولنا</a></li>
+                        <li><a href="ar_projects.html">مشاريعنا</a></li>
+                        <li><a href="ar_services.html">خدماتنا</a></li>
+                        <li><a href="ar_about.html">من نحن</a></li>
+                        <li><a href="ar_contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-contact-info" style="text-align: right;">
+                    <h3>معلومات الاتصال</h3>
+                    <p style="justify-content: flex-end;"><span style="margin-left: 10px;">الرياض، المملكة العربية السعودية</span> <i class="fas fa-map-marker-alt"></i></p>
+                    <p style="justify-content: flex-end;"><span style="margin-left: 10px;">966 500 406 056+</span> <i class="fas fa-phone-alt"></i></p>
+                    <p style="justify-content: flex-end;"><span style="margin-left: 10px;">info@ratmelmemar.com</span> <i class="fas fa-envelope"></i></p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; <span id="current-year">2024</span> شركة رتم المعمار للمقاولات. جميع الحقوق محفوظة.
+                <p class="designer-note">تصميم وتطوير بواسطة [اسمك/شركتك]</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

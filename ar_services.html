@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدماتنا الهندسية المتكاملة | شركة رتم المعمار للمقاولات</title>
+    <meta name="description"
+        content="نطاق خدمات المقاول العام الشاملة من رتم المعمار: الإنشاءات، الأنظمة الميكانيكية، الأنظمة الكهربائية، والتشطيبات النهائية.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* تنسيقات إضافية لصفحة الخدمات */
+        .service-category-card {
+            background-color: var(--nav-bg);
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-right: 5px solid var(--primary-color);
+            transition: border-right-color 0.3s;
+        }
+
+        .service-category-card:hover {
+            border-right-color: var(--accent-color);
+        }
+
+        .service-category-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+
+        .service-list {
+            list-style: none;
+            padding-right: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px 30px;
+            margin-top: 20px;
+        }
+
+        .service-list li {
+            color: var(--text-light);
+            font-size: 1em;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .service-list li i {
+            color: var(--primary-color);
+            margin-left: 10px;
+            margin-top: 5px;
+            /* لتوسيطها مع النص */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-container">
+            <!-- 1. الشعار -->
+            <div class="logo header-logo">
+                <a href="index.html">
+                    <img src="images/ratm-logo.png" alt="شعار شركة رتم المعمار للمقاولات"
+                        style="height: 40px; width: auto;">
+                    <span>شركة رتم المعمار للمقاولات</span>
+                </a>
+            </div>
+
+            <!-- 2. زر الهامبرغر -->
+            <button class="hamburger-menu" aria-label="Toggle Navigation"><span class="bar"></span><span
+                    class="bar"></span><span class="bar"></span></button>
+
+            <!-- 3. القائمة الرئيسية -->
+            <div class="main-nav-wrapper">
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <!-- <li><a href="ar_solutions.html">حلولنا</a></li> -->
+                        <li><a href="ar_projects.html">مشاريعنا</a></li>
+                        <li class="active"><a href="ar_services.html">خدماتنا</a></li>
+                        <li><a href="ar_about.html">من نحن</a></li>
+                        <!-- <li ><a href="ar_blog.html">المدونة</a></li> -->
+                        <li><a href="ar_contact.html">اتصل بنا</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions-group">
+                    <a href="en_services.html" class="lang-btn">English</a>
+                    <!-- <a href="ar_contact.html" class="consultation-btn">طلب استشارة مجانية</a> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div id="particles-js"></div>
+        <section class="page-section" style="padding-top: 120px;">
+            <div class="container">
+                <h1 style="text-align: center;">خدمات المقاول العام الشاملة (MEP & Civil)</h1>
+                <p style="text-align: center; max-width: 900px; margin: 0 auto 50px auto; color: var(--heading-color);">
+                    نقدم خدمات هندسية متكاملة تغطي المشروع من البداية حتى التسليم النهائي، بضمان الكفاءة والجودة.
+                </p>
+
+                <!-- 1. الأعمال الإنشائية والمدنية -->
+                <div class="service-category-card">
+                    <h3 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 10px;"><i
+                            class="fas fa-city" style="margin-left: 10px;"></i> أولاً: الأعمال الإنشائية والمدنية (Civil
+                        & Structure)</h3>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> أعمال الحفر والردم (Excavation & Backfilling)</li>
+                        <li><i class="fas fa-check-circle"></i> الأعمال الخرسانية المسلحة (Foundations, Columns, Slabs)
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> أعمال المباني والطوب (Block & Masonry Works)</li>
+                    </ul>
+                </div>
+
+                <!-- 2. الأنظمة الميكانيكية المتكاملة -->
+                <div class="service-category-card">
+                    <h3 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 10px;"><i
+                            class="fas fa-cogs" style="margin-left: 10px;"></i> ثانياً: الأنظمة الميكانيكية المتكاملة
+                        (Mechanical & Fire)</h3>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> أنظمة التكييف والتهوية (HVAC)</li>
+                        <li><i class="fas fa-check-circle"></i> أنظمة السباكة (Plumbing: Water Supply & Drainage)</li>
+                        <li><i class="fas fa-check-circle"></i> أنظمة مكافحة الحريق (UL/FM Pumps & Sprinklers)</li>
+                        <li><i class="fas fa-check-circle"></i> أنظمة إنذار الحريق (Fire Detection & Alarm)</li>
+                        <li><i class="fas fa-check-circle"></i> نظام إدارة الدخان (Smoke Management)</li>
+                    </ul>
+                </div>
+
+                <!-- 3. الأنظمة الكهربائية والتحكم -->
+                <div class="service-category-card">
+                    <h3 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 10px;"><i
+                            class="fas fa-bolt" style="margin-left: 10px;"></i> ثالثاً: الأنظمة الكهربائية والتحكم
+                        (Electrical & Control)</h3>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> الأنظمة الكهربائية (Power, Lighting, Grounding)</li>
+                        <li><i class="fas fa-check-circle"></i> أنظمة التيار الضعيف (CCTV, Data Networks, Telephone)
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> نظام إدارة المباني (BMS)</li>
+                        <li><i class="fas fa-check-circle"></i> أنظمة التحكم والأمن (Access Control & Security)</li>
+                    </ul>
+                </div>
+
+                <!-- 4. أعمال التشطيبات والعزل -->
+                <div class="service-category-card">
+                    <h3 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 10px;"><i
+                            class="fas fa-paint-roller" style="margin-left: 10px;"></i> رابعاً: أعمال التشطيبات والعزل
+                        (Finishing & Aesthetic)</h3>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> أعمال العزل المائي والحراري (Insulation Works)</li>
+                        <li><i class="fas fa-check-circle"></i> أعمال الأرضيات والجدران (Flooring, Marble, Paints)</li>
+                        <li><i class="fas fa-check-circle"></i> أعمال الأسقف المستعارة (Gypsum & Metal Ceilings)</li>
+                        <li><i class="fas fa-check-circle"></i> أعمال الأبواب والنوافذ (Aluminum, Glass, Wooden)</li>
+                    </ul>
+                </div>
+
+                <!-- قسم الصيانة الوقائية (ميزة إضافية) -->
+                <div class="service-category-card" style="border-right-color: var(--accent-color);">
+                    <h3 style="border-bottom: 2px solid var(--primary-color); padding-bottom: 10px;"><i
+                            class="fas fa-shield-alt" style="margin-left: 10px;"></i> خدمة إضافية: عقود الصيانة الوقائية
+                        السنوية</h3>
+                    <p>فريقنا متخصص في عقود الصيانة الشاملة لأنظمة التكييف والكهرباء، مع ضمان **سرعة استجابة لا تتجاوز 4
+                        ساعات** للأعطال الحرجة في المنشآت الحيوية (المولات والمستشفيات).</p>
+                    <a href="ar_contact.html" class="btn-primary" style="margin-top: 20px;">طلب عرض سعر صيانة</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- Floating Contact Buttons -->
+    <div class="fixed-contact-buttons">
+        <!-- زر الواتساب (باستخدام رقم الطوارئ الجديد) -->
+        <a href="https://wa.me/966592862546" target="_blank" class="floating-btn whatsapp-btn" aria-label="WhatsApp Us">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <!-- زر الاتصال الهاتفي (باستخدام رقم المكتب الجديد) -->
+        <a href="tel:+966592862546" class="floating-btn phone-btn" aria-label="Call Us">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>شركة رتم المعمار للمقاولات</h3>
+                    <p>نحن نحول الأفكار الإنشائية الطموحة إلى حقيقة. تميز في الهندسة والثقة في التنفيذ.</p>
+                    <div class="footer-social-links" style="direction: rtl; margin-top: 15px;">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul style="padding-right: 0;">
+                        <li><a href="ar_solutions.html">حلولنا</a></li>
+                        <li><a href="ar_projects.html">مشاريعنا</a></li>
+                        <li><a href="ar_services.html">خدماتنا</a></li>
+                        <li><a href="ar_about.html">من نحن</a></li>
+                        <li><a href="ar_contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-contact-info" style="text-align: right;">
+                    <h3>معلومات الاتصال</h3>
+                    <p style="justify-content: flex-end;"><span style="margin-left: 10px;">الرياض، المملكة العربية
+                            السعودية</span> <i class="fas fa-map-marker-alt"></i></p>
+                    <p style="justify-content: flex-end;"><span style="margin-left: 10px;">966 500 406 056+</span> <i
+                            class="fas fa-phone-alt"></i></p>
+                    <p style="justify-content: flex-end;"><span style="margin-left: 10px;">info@ratmelmemar.com</span>
+                        <i class="fas fa-envelope"></i></p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; <span id="current-year">2024</span> شركة رتم المعمار للمقاولات. جميع الحقوق محفوظة.
+                <p class="designer-note">تصميم وتطوير بواسطة [اسمك/شركتك]</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</body>
+
+</html>
