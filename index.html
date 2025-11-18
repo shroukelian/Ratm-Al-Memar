@@ -34,26 +34,37 @@
 
             <!-- 3. القائمة الرئيسية (تُستخدم للديسكتوب والقائمة المنسدلة للموبايل) -->
             <div class="main-nav-wrapper">
-                <nav class="header-nav">
-                    <ul>
-                        <li class="active"><a href="index.html">الرئيسية</a></li>
-                        <!-- <li><a href="ar_solutions.html">حلولنا</a></li> -->
-                        <li><a href="ar_projects.html">مشاريعنا</a></li>
-                        <li><a href="ar_services.html">خدماتنا</a></li>
-                        <li><a href="ar_about.html">من نحن</a></li>
-                        <!-- <li><a href="ar_blog.html">المدونة</a></li> -->
-                        <li><a href="ar_contact.html">اتصل بنا</a></li>
-                    </ul>
-                </nav>
+            <nav class="header-nav">
+                <ul>
+                    <li class="active"><a href="index.html">الرئيسية</a></li>
+                    
+                    <!-- العنصر الرئيسي للخدمات - يتضمن قائمة متداخلة -->
+                    <li class="services-title">
+                        <a href="ar_services_overview.html">الخدمات</a>
+                        <ul>
+                            <li><a href="ar_services_civil.html">أعمال الإنشاءات</a></li>
+                            <li><a href="ar_services_mechanical.html">الأعمال الميكانيكية</a></li>
+                            <li><a href="ar_services_electrical.html">الأعمال الكهربائية</a></li>
+                            <li><a href="ar_safety.html">أنظمة السلامة والدفاع المدني</a></li>
+                            <li><a href="ar_services_finishing.html">أعمال التشطيبات</a></li>
+                            <li><a href="ar_maintenance.html">الصيانة</a></li>
+                        </ul>
+                    </li>
 
-                <!-- أزرار الإجراءات (تظهر في الديسكتوب والقائمة المنسدلة للموبايل) -->
-                <div class="header-actions-group">
-                    <a href="en_home.html" class="lang-btn">English</a>
-                    <!-- <a href="ar_contact.html" class="consultation-btn">طلب استشارة مجانية</a> -->
-                </div>
+                    <li><a href="ar_projects.html">مشاريعنا</a></li>
+                    <li><a href="ar_about.html">عن الشركة</a></li> 
+                    <li><a href="ar_contact.html">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            
+            <!-- أزرار الإجراءات (تبقى كما هي) -->
+            <div class="header-actions-group">
+                <a href="en_home.html" class="lang-btn">English</a>
+                <a href="ar_contact.html" class="consultation-btn">طلب استشارة مجانية</a>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
     <main>
         <!-- Hero Section -->
@@ -65,7 +76,7 @@
                     <h1 style="color: var(--primary-color);">رتم المعمار للمقاولات</h1>
                     <h1 style="color: var(--accent-color);">تكامل. بناء. على المفتاح.</h1>
 
-                    <p style="color: var(--text-light); font-size: 1.5em; font-weight: 700; margin-top: 20px;">
+                    <p style="color:aliceblue; font-size: 1.5em; font-weight: 700; margin-top: 20px;">
                         المقاول العام الذي يضمن لك تنفيذ مشروعك من الفكرة حتى التسليم النهائي.
                     </p>
 
@@ -229,7 +240,7 @@
         </section>
 
         <!-- 4. قسم عملائنا وشراكاتنا (Clients & Logos) -->
-        <section id="clients" class="page-section ">
+    <section id="clients" class="page-section" style="background-color: var(--nav-bg);">
             <div class="container">
                 <h2 style="text-align: center;">شراكة مع أبرز العملاء في المملكة</h2>
                 <p style="text-align: center; color: var(--heading-color);">نفتخر بثقة كبرى المؤسسات والجهات الحكومية في

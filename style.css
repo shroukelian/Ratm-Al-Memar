@@ -1,19 +1,25 @@
-/* General & Typography (Ratm Al-Memar Theme - Teal/Orange) */
 :root {
-    --primary-color: #00BFA5; /* Teal/Firozi (شعار) */
-    --accent-color: #FF7043;  /* Orange (شعار) */
-    --bg-dark: #2C3E50;       /* Deep Navy/Black */
-    --text-light: #F0F0F0;
-    --heading-color: #00BFA5; /* Firozi for headings */
-    --nav-bg: #34495E;        /* Nav Background */
-    --nav-bg-rgb: 52, 73, 94;
-    --light-gray: #ECF0F1;
+    --primary-color: #00BFA5;
+    /* Teal/Firozi (للعناوين والأزرار الأساسية) */
+    --accent-color: #FF7043;
+    /* Orange (للتظليل والأزرار الثانوية) */
+    --bg-dark: #FFFFFF;
+    /* White Background (الخلفية الرئيسية) */
+    --text-light: #34495E;
+    /* Dark Text (نص داكن على خلفية فاتحة) */
+    --heading-color: #2C3E50;
+    /* Deep Navy (لون العناوين) */
+    --nav-bg: #ECF0F1;
+    /* Light Gray Background (خلفية الفوتر والقائمة) */
+    --nav-bg-rgb: 236, 240, 241;
 }
 
 body {
     font-family: 'Cairo', sans-serif;
     background-color: var(--bg-dark);
+    /* تغير إلى الأبيض */
     color: var(--text-light);
+    /* تغير إلى الداكن */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -22,92 +28,249 @@ body {
     display: flex;
     flex-direction: column;
 }
-html { overflow-x: hidden; }
-.container { max-width: 1200px; margin: 0 auto; padding: 0 25px; }
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
 
 /* Global Font Weights & Styles */
-h1, h2, h3, h4 { color: var(--heading-color); font-weight: 900; margin-bottom: 25px; }
-h1 { font-size: 3.5em; text-align: left; }
-h2 { font-size: 2.8em; text-align: left; margin-bottom: 60px; }
-p { font-size: 1.1em; line-height: 1.8; }
-a { color: var(--accent-color); text-decoration: none; transition: color 0.3s, background-color 0.3s; }
-a:hover { text-decoration: underline; }
+h1,
+h2,
+h3,
+h4 {
+    color: var(--heading-color);
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 3.5em;
+    text-align: left;
+}
+
+h2 {
+    font-size: 2.8em;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* --- منع التمرير عندما تكون القائمة مفتوحة --- */
 
 
 /* Header & Navigation */
 header {
-    background-color: rgba(var(--nav-bg-rgb), 0.95);
+    background-color: var(--bg-dark);
+    /* الخلفية البيضاء */
     padding: 15px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* ظل خفيف على الخلفية البيضاء */
+    border-bottom: 1px solid #EEE;
 }
+
+header {
+    background-color: var(--bg-dark);
+    /* الخلفية البيضاء */
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* ظل خفيف على الخلفية البيضاء */
+    border-bottom: 1px solid #EEE;
+}
+
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
-.logo a { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.logo img { height: 40px; width: auto; }
-.logo span { font-size: 1.2em; font-weight: 700; color: var(--text-light); }
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.logo span {
+    color: var(--heading-color);
+}
+
+/* الشعار بلون داكن */
+.header-nav ul li a {
+    color: var(--heading-color);
+}
+
+/* روابط القائمة بلون داكن */
+.header-nav ul li a:hover,
+.header-nav ul li.active a {
+    background-color: var(--primary-color);
+    color: var(--bg-dark);
+}
 
 /* Hamburger Menu & Nav Wrapper (Mobile) */
-.hamburger-menu { 
-    display: none; 
+.hamburger-menu {
+    display: none;
     /* يتم إضافة تنسيقات الموبايل هنا */
 }
-.main-nav-wrapper { display: flex; align-items: center; gap: 20px; margin-right: auto; }
-.header-nav ul { display: flex; list-style: none; margin: 0; padding: 0; gap: 5px; }
-.header-nav ul li a { color: var(--text-light); padding: 8px 12px; font-size: 0.95em; font-weight: 600; border-radius: 6px; transition: 0.3s; }
-.header-nav ul li a:hover, .header-nav ul li.active a { background-color: var(--primary-color); color: var(--bg-dark); }
-.header-actions-group { display: flex; align-items: center; gap: 15px; }
-.lang-btn { background-color: var(--accent-color); color: var(--bg-dark); padding: 8px 15px; border-radius: 6px; font-weight: 700; font-size: 0.9em; }
-.consultation-btn { background-color: var(--primary-color); color: var(--bg-dark); padding: 8px 15px; border-radius: 8px; font-weight: 700; font-size: 0.9em; }
+
+.main-nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: auto;
+}
+
+.header-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+}
+
+.header-nav ul li a {
+    color: var(--text-light);
+    padding: 8px 12px;
+    font-size: 0.95em;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.header-nav ul li a:hover,
+.header-nav ul li.active a {
+    background-color: var(--primary-color);
+    color: var(--bg-dark);
+}
+
+.header-actions-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.lang-btn {
+    background-color: var(--accent-color);
+    color: var(--bg-dark);
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.consultation-btn {
+    background-color: var(--primary-color);
+    color: var(--bg-dark);
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9em;
+}
 
 
 /* Hero Section */
 #hero {
-    background-image: linear-gradient(rgba(0, 191, 165, 0.2), rgba(44, 62, 80, 0.7)), url('images/home.webp'); 
+    background-image: linear-gradient(rgba(0, 191, 165, 0.2), rgba(44, 62, 80, 0.7)), url('images/home.webp');
     background-size: cover;
     background-position: center;
     color: white;
     padding: 50px 0;
-    min-height: 85vh; 
+    min-height: 85vh;
     display: flex;
     align-items: center;
-    justify-content: flex-start; 
-    text-align: right; 
+    justify-content: flex-start;
+    text-align: right;
 }
 
 /* Hero Typography */
 #hero h1 {
-    color: var(--text-light); 
+    color: var(--text-light);
     font-size: 3.8em;
     text-shadow: 2px 2px var(--bg-dark);
 }
+
 #hero h2 {
-    color: var(--accent-color); 
+    color: var(--accent-color);
     font-size: 2.2em;
     margin-bottom: 30px;
     text-align: right;
 }
 
 /* Hero Buttons */
-.hero-content div { display: flex; gap: 20px; }
+.hero-content div {
+    display: flex;
+    gap: 20px;
+}
 
 /* Global Page Structure */
-main { padding-top: 30px; flex-grow: 1; }
-.page-section { padding: 80px 0; }
-.light-bg { background-color: var(--nav-bg); } 
+main {
+    padding-top: 30px;
+    flex-grow: 1;
+}
+
+.page-section {
+    padding: 80px 0;
+}
+
+.light-bg {
+    background-color: var(--nav-bg);
+}
 
 /* Buttons */
-.btn-primary { background-color: var(--primary-color); color: var(--bg-dark); padding: 12px 30px; border-radius: 6px; font-weight: 700; transition: 0.3s; }
-.btn-secondary { background-color: var(--accent-color); color: var(--bg-dark); padding: 12px 30px; border-radius: 6px; font-weight: 700; transition: 0.3s; }
-.btn-primary:hover { background-color: #00A691; }
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--bg-dark);
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-secondary {
+    background-color: var(--accent-color);
+    color: var(--bg-dark);
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #00A691;
+}
 
 
 /* Why Choose Us Grid */
@@ -129,7 +292,7 @@ main { padding-top: 30px; flex-grow: 1; }
 
 .choose-us-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     border-top-color: var(--accent-color);
 }
 
@@ -173,7 +336,8 @@ main { padding-top: 30px; flex-grow: 1; }
 
 .project-content {
     padding: 20px;
-    text-align: right; /* RTL */
+    text-align: right;
+    /* RTL */
 }
 
 /* Contact Page Styles (New) */
@@ -190,7 +354,8 @@ main { padding-top: 30px; flex-grow: 1; }
     gap: 15px;
     margin-bottom: 30px;
     text-align: right;
-    justify-content: flex-end; /* RTL */
+    justify-content: flex-end;
+    /* RTL */
 }
 
 .contact-info-item i {
@@ -299,38 +464,83 @@ footer {
 html[dir="rtl"] .hero-content {
     text-align: right !important;
 }
+
 html[dir="rtl"] .hero-content h1 {
     text-align: right !important;
 }
+
 html[dir="rtl"] .hero-content div {
-    justify-content: flex-end; /* لضمان محاذاة الأزرار لليمين */
+    justify-content: flex-end;
+    /* لضمان محاذاة الأزرار لليمين */
 }
+
 html[dir="rtl"] .contact-info-item {
-    justify-content: flex-end; /* RTL */
+    justify-content: flex-end;
+    /* RTL */
     text-align: right;
 }
+
 html[dir="rtl"] .contact-info-item span {
-    order: 1; /* جعل النص يسبق الأيقونة في RTL */
+    order: 1;
+    /* جعل النص يسبق الأيقونة في RTL */
     margin-left: 10px;
     margin-right: 0;
 }
+
 html[dir="rtl"] .contact-info-item i {
-    order: 2; /* جعل الأيقونة في النهاية في RTL */
+    order: 2;
+    /* جعل الأيقونة في النهاية في RTL */
 }
 
 /* LTR Adjustment */
-html[dir="ltr"] .main-nav-wrapper { margin-left: auto; margin-right: 0; }
-html[dir="ltr"] .hero-section { justify-content: flex-start; text-align: left; }
-html[dir="ltr"] .hero-content h1, 
-html[dir="ltr"] .hero-content h2, 
-html[dir="ltr"] .hero-content p { text-align: left !important; }
-html[dir="ltr"] .hero-content div { justify-content: flex-start; }
-html[dir="ltr"] .contact-info-item { justify-content: flex-start; text-align: left; }
-html[dir="ltr"] .contact-info-item span { order: 2; margin-right: 10px; margin-left: 0; }
-html[dir="ltr"] .contact-info-item i { order: 1; }
-html[dir="ltr"] .project-content { text-align: left; }
-html[dir="ltr"] .footer-grid { text-align: left; }
-html[dir="ltr"] .footer-social-links a { margin-right: 15px; margin-left: 0; }
+html[dir="ltr"] .main-nav-wrapper {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+html[dir="ltr"] .hero-section {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+html[dir="ltr"] .hero-content h1,
+html[dir="ltr"] .hero-content h2,
+html[dir="ltr"] .hero-content p {
+    text-align: left !important;
+}
+
+html[dir="ltr"] .hero-content div {
+    justify-content: flex-start;
+}
+
+html[dir="ltr"] .contact-info-item {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+html[dir="ltr"] .contact-info-item span {
+    order: 2;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+html[dir="ltr"] .contact-info-item i {
+    order: 1;
+}
+
+html[dir="ltr"] .project-content {
+    text-align: left;
+}
+
+html[dir="ltr"] .footer-grid {
+    text-align: left;
+}
+
+html[dir="ltr"] .footer-social-links a {
+    margin-right: 15px;
+    margin-left: 0;
+}
+
 /* Add to style.css */
 
 /* Testimonials Section */
@@ -368,6 +578,7 @@ html[dir="ltr"] .footer-social-links a { margin-right: 15px; margin-left: 0; }
     margin-bottom: 0;
     font-weight: 700;
 }
+
 /* Add these styles to the end of your style.css file */
 
 /* --- Fixed Floating Contact Buttons Design --- */
@@ -375,19 +586,20 @@ html[dir="ltr"] .footer-social-links a { margin-right: 15px; margin-left: 0; }
 .fixed-contact-buttons {
     position: fixed;
     bottom: 25px;
-    z-index: 999; /* لضمان ظهورها فوق كل شيء */
+    z-index: 999;
+    /* لضمان ظهورها فوق كل شيء */
     /* يجب تعديل الموضع حسب اتجاه الصفحة */
 }
 
 /* RTL: Buttons on the right */
 html[dir="rtl"] .fixed-contact-buttons {
-    left: 25px; 
+    left: 25px;
     right: auto;
 }
 
 /* LTR: Buttons on the left */
 html[dir="ltr"] .fixed-contact-buttons {
-    right: 25px; 
+    right: 25px;
     left: auto;
 }
 
@@ -413,24 +625,30 @@ html[dir="ltr"] .fixed-contact-buttons {
 
 /* WhatsApp Button Style (Green) */
 .whatsapp-btn {
-    background-color: #25D366; /* WhatsApp Green */
+    background-color: #25D366;
+    /* WhatsApp Green */
 }
+
 .whatsapp-btn:hover {
     background-color: #128C7E;
 }
 
 /* Phone Button Style (Accent Orange) */
 .phone-btn {
-    background-color: var(--accent-color); /* Orange/Accent */
+    background-color: var(--accent-color);
+    /* Orange/Accent */
 }
+
 .phone-btn:hover {
     background-color: #E0643C;
 }
+
 /* --- LTR/RTL Mobile Navigation Fixes --- */
 
 /* Hamburger Button Styling */
 .hamburger-menu {
-    display: none; /* Default for desktop */
+    display: none;
+    /* Default for desktop */
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
@@ -439,7 +657,8 @@ html[dir="ltr"] .fixed-contact-buttons {
     border: none;
     cursor: pointer;
     padding: 0;
-    z-index: 1100; /* Above nav wrapper */
+    z-index: 1100;
+    /* Above nav wrapper */
 }
 
 .hamburger-menu .bar {
@@ -454,9 +673,11 @@ html[dir="ltr"] .fixed-contact-buttons {
 .hamburger-menu.is-active .bar:nth-child(2) {
     opacity: 0;
 }
+
 .hamburger-menu.is-active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
+
 .hamburger-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
@@ -468,10 +689,12 @@ html[dir="ltr"] .fixed-contact-buttons {
 }
 
 @media (max-width: 992px) {
+
     /* Show Hamburger on Mobile/Tablet */
     .hamburger-menu {
         display: flex;
-        order: 2; /* Move it to the right (RTL) or left (LTR) of the logo */
+        order: 2;
+        /* Move it to the right (RTL) or left (LTR) of the logo */
     }
 
     /* Hide the entire nav wrapper by default */
@@ -489,110 +712,154 @@ html[dir="ltr"] .fixed-contact-buttons {
         z-index: 1050;
         overflow-y: auto;
         /* Hide off-screen */
-        transform: translateY(-100%); 
+        transform: translateY(-100%);
     }
 
     /* Show when 'is-open' class is added by main.js */
     .main-nav-wrapper.is-open {
         transform: translateY(0);
     }
-    
+
     .header-nav ul {
         flex-direction: column;
         text-align: center;
         gap: 20px;
     }
+
     .header-nav ul li a {
-        font-size: 1.5em; /* Larger links for tapping */
+        font-size: 1.5em;
+        /* Larger links for tapping */
     }
+
     .header-actions-group {
         flex-direction: column;
         gap: 20px;
     }
-    .lang-btn, .consultation-btn {
-        width: 200px; /* Full width for mobile buttons */
+
+    .lang-btn,
+    .consultation-btn {
+        width: 200px;
+        /* Full width for mobile buttons */
         text-align: center;
         padding: 15px 0;
         font-size: 1.1em;
     }
-    
+
     /* --- General Mobile Adjustments --- */
-    h1 { font-size: 2.5em; }
-    h2 { font-size: 2em; margin-bottom: 40px; }
-    p { font-size: 1em; line-height: 1.7; }
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.7;
+    }
 
     /* Adjust padding for fixed header */
-    main { padding-top: 80px; }
-    .page-section { padding: 50px 0; }
-    
+    main {
+        padding-top: 80px;
+    }
+
+    .page-section {
+        padding: 50px 0;
+    }
+
     /* Contact Page Grid to Stack */
     .contact-grid {
-        grid-template-columns: 1fr; /* Stack into a single column */
+        grid-template-columns: 1fr;
+        /* Stack into a single column */
         gap: 30px;
     }
-    
+
     /* Fix alignment for contact info in LTR mobile view */
     html[dir="ltr"] .contact-info-item,
     html[dir="rtl"] .contact-info-item {
-        justify-content: center; /* Center contact info items on small screen */
+        justify-content: center;
+        /* Center contact info items on small screen */
         text-align: center;
     }
-    
+
     /* Footer Grid to Stack */
     .footer-grid {
         grid-template-columns: 1fr;
         text-align: center;
     }
+
     .footer-col {
         margin-bottom: 30px;
     }
+
     html[dir="rtl"] .footer-col ul {
         padding-right: 0;
     }
+
     html[dir="ltr"] .footer-col ul {
         padding-left: 0;
     }
-    
+
     /* Center text in footer columns */
-    .footer-col h3 { text-align: center; }
-    .footer-col p { text-align: center; }
-    .footer-col ul { text-align: center; }
-    .footer-col ul li a { display: inline-block; }
-    
+    .footer-col h3 {
+        text-align: center;
+    }
+
+    .footer-col p {
+        text-align: center;
+    }
+
+    .footer-col ul {
+        text-align: center;
+    }
+
+    .footer-col ul li a {
+        display: inline-block;
+    }
+
     /* Social Links Centering */
     .footer-social-links {
         text-align: center !important;
-        direction: ltr !important; /* Force LTR for easy centering */
+        direction: ltr !important;
+        /* Force LTR for easy centering */
     }
+
     .footer-contact-info p {
-        justify-content: center !important; /* Center contact info lines */
+        justify-content: center !important;
+        /* Center contact info lines */
     }
 }
+
 /* --- تعديلات على قسم Hero Section في وضع الموبايل --- */
 @media (max-width: 992px) {
     /* ... (التعديلات السابقة على الأقسام الأخرى) ... */
 
     /* Hero Section Specific Adjustments */
     #hero {
-        min-height: 80vh; /* تقليل الارتفاع قليلاً */
+        min-height: 80vh;
+        /* تقليل الارتفاع قليلاً */
         padding: 10px 0;
-        align-items: flex-end; /* جعل المحتوى في الأسفل ليظهر بشكل أفضل */
+        align-items: flex-end;
+        /* جعل المحتوى في الأسفل ليظهر بشكل أفضل */
     }
 
     .hero-content {
         /* لضمان أن المحتوى يبدأ من اليسار (LTR) أو اليمين (RTL) بشكل صحيح على الموبايل */
-        text-align: center !important; 
+        text-align: center !important;
         width: 100%;
     }
 
     /* Hero Titles */
     #hero h1 {
-        font-size: 2.5em !important; /* تصغير حجم الخط */
+        font-size: 2.5em !important;
+        /* تصغير حجم الخط */
         text-align: center !important;
         margin-bottom: 5px;
         line-height: 1.2;
     }
-    
+
     #hero h1:nth-child(2) {
         font-size: 2em !important;
         margin-bottom: 10px;
@@ -606,44 +873,437 @@ html[dir="ltr"] .fixed-contact-buttons {
     }
 
     /* Hero Buttons Group (to stack them neatly) */
-    .hero-content > div { /* This targets the div containing the two buttons */
-        flex-direction: column; /* جعل الأزرار تتراص عمودياً */
-        align-items: center; /* توسيط الأزرار */
-        gap: 15px; /* تباعد بين الأزرار */
+    .hero-content>div {
+        /* This targets the div containing the two buttons */
+        flex-direction: column;
+        /* جعل الأزرار تتراص عمودياً */
+        align-items: center;
+        /* توسيط الأزرار */
+        gap: 15px;
+        /* تباعد بين الأزرار */
         margin-top: 30px !important;
     }
 
-    .hero-content > div a {
-        width: 80%; /* تحديد عرض مناسب للأزرار */
+    .hero-content>div a {
+        width: 80%;
+        /* تحديد عرض مناسب للأزرار */
         max-width: 250px;
         text-align: center;
-        margin: 0 !important; /* إلغاء الهوامش الجانبية التي قد تتسبب في التداخل */
+        margin: 0 !important;
+        /* إلغاء الهوامش الجانبية التي قد تتسبب في التداخل */
     }
+
     /* Generic Button Adjustments for Mobile */
-    .btn-primary, .btn-secondary {
-        display: block; /* لضمان أخذ الزر عرضاً كاملاً أو محدد مسبقاً */
-        width: 90%; /* إعطاء عرض جيد للأزرار */
+    .btn-primary,
+    .btn-secondary {
+        display: block;
+        /* لضمان أخذ الزر عرضاً كاملاً أو محدد مسبقاً */
+        background-color: var(--primary-color);
+        color: var(--bg-dark);
+        width: 90%;
+        /* إعطاء عرض جيد للأزرار */
         max-width: 300px;
-        margin: 20px auto !important; /* توسيط الزر نفسه أفقياً */
-        text-align: center; /* توسيط النص داخل الزر */
-        padding: 12px 20px; /* ضمان وجود حشوة كافية */
+        margin: 20px auto !important;
+        /* توسيط الزر نفسه أفقياً */
+        text-align: center;
+        /* توسيط النص داخل الزر */
+        padding: 12px 20px;
+        /* ضمان وجود حشوة كافية */
         font-size: 1.1em;
     }
+
+    .btn-secondary {
+        background-color: var(--accent-color);
+        color: var(--bg-dark);
+        /* ... */
+    }
+
+    .consultation-btn {
+        background-color: var(--primary-color);
+        color: var(--bg-dark);
+        /* ... */
+    }
+
+    .lang-btn {
+        background-color: var(--accent-color);
+        color: var(--bg-dark);
+        /* ... */
+    }
 }
+
 /* Adjustments for Mobile View */
 @media (max-width: 600px) {
     .fixed-contact-buttons {
         bottom: 15px;
     }
+
     html[dir="rtl"] .fixed-contact-buttons {
-        left: 15px; 
+        left: 15px;
     }
+
     html[dir="ltr"] .fixed-contact-buttons {
-        right: 15px; 
+        right: 15px;
     }
+
     .floating-btn {
         width: 50px;
         height: 50px;
         font-size: 1.5em;
     }
+}
+
+@media (max-width: 992px) {
+    /* ... (Existing mobile styles for hamburger and wrapper remain) ... */
+
+    .main-nav-wrapper {
+        background-color: var(--nav-bg);
+        /* لون خلفية القائمة الفاتح */
+        z-index: 1050;
+    }
+
+    .header-nav ul {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .header-nav ul li {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .header-nav ul li a {
+        font-size: 1.8em;
+        font-weight: 700;
+        color: var(--heading-color);
+        /* لون داكن للرابط الأساسي */
+        display: block;
+        padding: 15px 0;
+    }
+
+    /* Nested Menu (Dropdown simulation) */
+    .header-nav ul ul {
+        background-color: #DDDDDD;
+        /* لون أفتح للقسم المتداخل */
+        padding: 10px 0;
+        list-style: none;
+        margin: 0;
+    }
+
+    .header-nav ul ul li a {
+        font-size: 1.2em;
+        /* حجم أصغر للعناصر الفرعية */
+        padding: 8px 0;
+        color: var(--text-light);
+        /* لون أغمق قليلاً */
+    }
+
+    /* Styling for the specific 'Services' link to look like a title */
+    .header-nav ul li.services-title a {
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
+        margin-bottom: 10px;
+    }
+
+    /* Remove padding/margin from nested list in footer (if necessary) */
+    .footer-col ul {
+        padding-right: 0;
+    }
+}
+
+/* --- إضافة تنسيقات القائمة المنسدلة (Dropdown) لملف style.css --- */
+
+/* القائمة الفرعية (مخفية بشكل افتراضي) */
+.header-nav ul li {
+    position: relative;
+    /* لتمكين وضع القائمة الفرعية بالنسبة لهذا العنصر */
+}
+
+.header-nav ul ul {
+    display: none;
+    /* إخفاء القائمة الفرعية */
+    position: absolute;
+    background-color: var(--nav-bg);
+    /* خلفية القائمة المنسدلة (رمادي فاتح) */
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    z-index: 1001;
+    border-radius: 5px;
+}
+
+/* التنسيق الأولي للقائمة المنسدلة (RTL) */
+html[dir="rtl"] .header-nav ul ul {
+    right: 0;
+    /* بدء القائمة من اليمين في RTL */
+    left: auto;
+}
+
+/* التنسيق الأولي للقائمة المنسدلة (LTR) */
+html[dir="ltr"] .header-nav ul ul {
+    left: 0;
+    /* بدء القائمة من اليسار في LTR */
+    right: auto;
+}
+
+/* إظهار القائمة الفرعية عند المرور على العنصر الرئيسي */
+.header-nav ul li:hover>ul {
+    display: flex;
+    flex-direction: column;
+    /* جعل الروابط عمودية في القائمة المنسدلة */
+}
+
+/* تنسيق روابط القائمة الفرعية */
+.header-nav ul ul li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* الروابط تأخذ عرض القائمة */
+    text-align: right;
+    /* محاذاة النص لليمين (RTL) */
+}
+
+html[dir="ltr"] .header-nav ul ul li {
+    text-align: left;
+    /* محاذاة النص لليسار (LTR) */
+}
+
+.header-nav ul ul li a {
+    padding: 10px 15px;
+    font-size: 0.9em;
+    color: var(--heading-color) !important;
+    /* النص داكن */
+    background-color: transparent !important;
+    white-space: nowrap;
+    /* لمنع تداخل الكلمات الطويلة */
+}
+
+.header-nav ul ul li a:hover {
+    background-color: #EEE !important;
+    /* تظليل خفيف عند المرور */
+    color: var(--primary-color) !important;
+}
+
+/* Hide nested lists on mobile as they are handled differently */
+@media (max-width: 992px) {
+    .header-nav ul ul {
+        display: none !important;
+        position: static;
+        /* إلغاء التنسيق المطلق في وضع الجوال */
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+}
+
+
+/* --- تعديلات جذرية لتحويل القائمة إلى شريط جانبي (Side Menu) --- */
+@media (max-width: 992px) {
+    /* ... (التنسيقات السابقة تبقى كما هي) ... */
+
+    /* 1. قائمة الموبايل: شريط جانبي ينسدل من اليمين (RTL) */
+    .main-nav-wrapper {
+        position: fixed;
+        top: 0;
+        /* تحديد العرض: عادةً 75-80% من الشاشة */
+        width: 80%;
+        max-width: 350px;
+        /* لضمان عدم اتساعها جداً في الشاشات الكبيرة */
+        height: 100%;
+        background-color: var(--nav-bg);
+        flex-direction: column;
+        align-items: flex-start;
+        /* محاذاة العناصر لليمين (RTL) */
+        padding: 80px 20px;
+        /* زيادة الحشوة الداخلية */
+        gap: 30px;
+        z-index: 1050;
+        overflow-y: auto;
+
+        /* إخفاء القائمة في اليمين (RTL) */
+        right: 0;
+        left: auto;
+        transform: translateX(100%);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+        /* ظل جانبي */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* 2. حالة الفتح: (RTL) */
+    .main-nav-wrapper.is-open {
+        transform: translateX(0);
+        /* سحب القائمة للداخل */
+    }
+
+    /* 3. تنسيق عناصر القائمة داخل الشريط الجانبي */
+    .header-nav {
+        width: 100%;
+    }
+
+    .header-nav ul {
+        align-items: flex-start;
+        /* محاذاة لليمين */
+        text-align: right;
+    }
+
+    .header-nav ul li {
+        width: 100%;
+        text-align: right;
+    }
+
+    .header-nav ul li a {
+        padding: 10px 0;
+        /* تقليل الحشوة الأفقية */
+        text-align: right;
+    }
+
+    /* 4. تعديل مكان زر الإغلاق (X) */
+    .hamburger-menu.is-active {
+        position: fixed;
+        top: 25px;
+        left: auto;
+        /* إلغاء التثبيت في اليسار */
+        right: 25px;
+        /* وضعه في اليمين ليكون بجانب الشريط الجانبي */
+        z-index: 1100;
+        color: var(--heading-color);
+    }
+
+    /* 5. تنسيق أزرار الإجراءات داخل القائمة (وضعها في أسفل القائمة) */
+    .header-actions-group {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 30px;
+        border-top: 1px solid #DDD;
+        width: 100%;
+    }
+
+    .lang-btn,
+    .consultation-btn {
+        width: 100%;
+        /* جعل الأزرار تأخذ عرض الشريط الجانبي */
+        max-width: none;
+    }
+}
+
+
+/* --- تعديلات قائمة الجوال ضمن @media (max-width: 992px) في style.css --- */
+
+@media (max-width: 992px) {
+    /* ... (التنسيقات السابقة تبقى كما هي) ... */
+
+    /* القائمة الرئيسية (العناصر الأفقية) */
+    .header-nav ul {
+        gap: 0px; /* إلغاء التباعد بين العناصر الرئيسية */
+    }
+
+    /* الروابط الأساسية (الرئيسية، مشاريعنا، إلخ) */
+    .header-nav ul li a {
+        font-size: 1.4em; /* تصغير الحجم إلى 1.4em (كان 1.8em) */
+        font-weight: 700;
+        color: var(--heading-color); 
+        padding: 15px 0 15px 0; /* زيادة التباعد الرأسي لسهولة النقر */
+        border-bottom: 1px solid #EEE; /* فاصل خفيف بين العناصر */
+    }
+
+    /* العنصر النشط */
+    .header-nav ul li.active a {
+        background-color: var(--primary-color) !important;
+        color: var(--bg-dark) !important;
+        border-bottom: 1px solid var(--primary-color) !important;
+        border-radius: 0;
+    }
+
+    /* --- عرض القائمة المتداخلة للخدمات تلقائياً (الحل لمشكلة Dropdown) --- */
+
+    /* 1. إظهار القائمة الفرعية بشكل افتراضي في وضع الموبايل */
+    .header-nav ul ul {
+        display: block !important; /* إظهار القائمة الفرعية دائماً */
+        position: static; /* إزالة الوضع المطلق */
+        background-color: transparent !important; /* خلفية شفافة لتبدو جزءاً من القائمة الرئيسية */
+        padding: 0; 
+        margin: 0;
+        box-shadow: none;
+    }
+    
+    /* 2. الروابط الفرعية داخل قائمة الخدمات */
+    .header-nav ul ul li a {
+        font-size: 1.1em; /* حجم مناسب للعناصر الفرعية */
+        font-weight: 400; /* خط أخف */
+        padding: 10px 20px 10px 0; /* حشوة لليسار لتبدو متداخلة */
+        color: var(--text-light); /* لون داكن أو لون النص الأساسي */
+        background-color: transparent !important;
+        border-bottom: none; /* إزالة الفاصل بين الروابط الفرعية */
+    }
+    html[dir="rtl"] .header-nav ul ul li a {
+        text-align: right;
+        padding: 10px 20px 10px 0; /* إضافة حشوة للداخل لليمين */
+    }
+    html[dir="ltr"] .header-nav ul ul li a {
+        text-align: left;
+        padding: 10px 0 10px 20px; /* إضافة حشوة للداخل لليسار */
+    }
+
+    /* 3. تعديل رابط الخدمات الأساسي (لجعله يبدو كعنوان) */
+    .header-nav ul li.services-title a {
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--primary-color) !important;
+        margin-bottom: 5px;
+        padding-bottom: 8px;
+    }
+}
+/* --- تعديلات قائمة الجوال ضمن @media (max-width: 992px) في style.css --- */
+
+@media (max-width: 992px) {
+    /* ... (التنسيقات السابقة) ... */
+    
+    /* 1. إخفاء القائمة الفرعية في وضع الجوال (بشكل افتراضي) */
+    .header-nav ul .services-submenu {
+        display: none !important; 
+        /* يجب إخفائها هنا للتحكم بها بالـ JS */
+        background-color: transparent !important;
+        /* ... (تنسيقاتها كقائمة فرعية تبقى كما هي) ... */
+    }
+    
+    /* 2. تنسيق الأيقونة (للتوجيه) */
+    .dropdown-icon {
+        transition: transform 0.3s;
+        float: left; /* وضعها على اليسار في RTL */
+        font-size: 0.7em;
+        margin-top: 10px !important;
+        color: var(--heading-color);
+    }
+    html[dir="ltr"] .dropdown-icon {
+        float: right; /* وضعها على اليمين في LTR */
+    }
+
+    /* 3. دوران الأيقونة عند الفتح */
+    .services-dropdown-toggle.is-open .dropdown-icon {
+        transform: rotate(180deg);
+        color: var(--primary-color);
+    }
+    
+    /* 4. تنسيق الروابط الفرعية (لتبدو متداخلة) */
+    .header-nav ul ul li a {
+        /* ... (تنسيقات الروابط الفرعية تبقى كما هي) ... */
+        background-color: #EEE !important; /* خلفية مميزة للفرعي */
+        color: var(--text-light) !important;
+    }
+    html[dir="rtl"] .header-nav ul ul li a {
+        padding: 10px 30px 10px 0 !important; /* زيادة الحشوة لليمين للتداخل */
+    }
+    html[dir="ltr"] .header-nav ul ul li a {
+        padding: 10px 0 10px 30px !important; /* زيادة الحشوة لليسار للتداخل */
+    }
+    
+    /* إلغاء التنسيق السابق لرابط الخدمات الرئيسي ليعود كأي رابط آخر */
+    .header-nav ul li.services-title a { /* (يمكنك حذف هذا التنسيق إذا لم يعد مستخدماً) */
+        border-bottom: none !important;
+        margin-bottom: 0;
+        padding-bottom: 15px;
+        color: var(--heading-color) !important;
+    }
+
 }
