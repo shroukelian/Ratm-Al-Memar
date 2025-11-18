@@ -75,14 +75,13 @@ a:hover {
     text-decoration: underline;
 }
 
-/* --- منع التمرير عندما تكون القائمة مفتوحة --- */
 
 
 /* Header & Navigation */
 header {
     background-color: var(--bg-dark);
     /* الخلفية البيضاء */
-    padding: 15px 0;
+    padding: 0px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -762,7 +761,7 @@ html[dir="ltr"] .fixed-contact-buttons {
 
     /* Adjust padding for fixed header */
     main {
-        padding-top: 80px;
+        padding-top: 60px;
     }
 
     .page-section {
@@ -1256,9 +1255,7 @@ html[dir="ltr"] .header-nav ul ul li {
 }
 /* --- تعديلات قائمة الجوال ضمن @media (max-width: 992px) في style.css --- */
 
-@media (max-width: 992px) {
-    /* ... (التنسيقات السابقة) ... */
-    
+@media (max-width: 992px) {    
     /* 1. إخفاء القائمة الفرعية في وضع الجوال (بشكل افتراضي) */
     .header-nav ul .services-submenu {
         display: none !important; 
