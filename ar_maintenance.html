@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات الصيانة وعقود التشغيل | شركة رتم المعمار للمقاولات</title>
+    <meta name="description"
+        content="عقود صيانة سنوية شاملة لأنظمة التكييف، الإلكتروميكانيك، والسلامة في المنشآت الحيوية والتجارية.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* إعادة تنسيقات بطاقات الصيانة من ar_services.html */
+        .maintenance-packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .package-card {
+            background-color: var(--nav-bg);
+            padding: 25px;
+            border-radius: 10px;
+            border-top: 4px solid #AAA;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Header (Updated Navigation) -->
+    <header>
+        <div class="container header-container">
+            <div class="logo header-logo">
+                <a href="index.html">
+                    <img src="images/ratm-logo.png" alt="شعار شركة رتم المعمار للمقاولات" style="height: 40px; width: auto;">
+                    <span>شركة رتم المعمار للمقاولات</span>
+                </a>
+            </div>
+            <button class="hamburger-menu" aria-label="Toggle Navigation"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            <div class="main-nav-wrapper">
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li class="services-title active">
+                            <a href="ar_services.html">الخدمات</a>
+                            <ul>
+                                <li><a href="ar_services_civil.html">أعمال الإنشاءات المدنية</a></li>
+                                <li><a href="ar_services_electromechanical.html">أعمال الإلكتروميكانيك (MEP)</a></li>
+                                <li><a href="ar_services_hvac.html">أعمال التكييف والتهوية</a></li>
+                                <li><a href="ar_safety.html">أنظمة السلامة والدفاع المدني</a></li>
+                                <li><a href="ar_services_finishing.html">أعمال التشطيبات</a></li>
+                                <li><a href="ar_maintenance.html">الصيانة وعقود التشغيل</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="ar_projects.html">مشاريعنا</a></li>
+                        <li><a href="ar_about.html">عن الشركة</a></li> 
+                        <li><a href="ar_contact.html">تواصل معنا</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions-group">
+                    <a href="en_maintenance.html" class="lang-btn">English</a>
+                    <a href="ar_contact.html" class="consultation-btn">طلب استشارة مجانية</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="particles-js"></div>
+        <section class="page-section" style="padding-top: 120px; background-color: var(--bg-dark);">
+            <div class="container">
+                <h1 style="text-align: center;">خدمات الصيانة وعقود التشغيل</h1>
+                <p style="text-align: center; max-width: 900px; margin: 0 auto 50px auto; color: var(--text-light);">
+                    نقدم عقود صيانة وقائية وعلاجية تضمن الاستمرارية التشغيلية وكفاءة الأداء لأنظمة منشأتك الحيوية (HVAC، كهرباء، سباكة، سلامة).
+                </p>
+
+                <!-- قسم عقود الصيانة المتخصصة -->
+                <div class="service-category-card" style="border-right-color: var(--accent-color);">
+                    <h2 style="color: var(--heading-color); text-align: right; margin-bottom: 25px;"><i class="fas fa-tools" style="margin-left: 10px; color: var(--primary-color);"></i> نطاق العقود المتخصصة</h2>
+                    <p>عقودنا مرنة وتغطي جميع أنظمة المبنى، بدءاً من الصيانة الروتينية حتى الدعم الطارئ على مدار الساعة (24/7).</p>
+                    <ul class="service-list" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                        <li><i class="fas fa-snowflake"></i> عقود صيانة شاملة لأنظمة التكييف والتهوية (HVAC)</li>
+                        <li><i class="fas fa-bolt"></i> صيانة الأنظمة الكهربائية والجهد المنخفض</li>
+                        <li><i class="fas fa-fire-extinguisher"></i> صيانة أنظمة السلامة والدفاع المدني</li>
+                        <li><i class="fas fa-faucet"></i> صيانة شبكات السباكة والصرف الصحي</li>
+                    </ul>
+                </div>
+                
+                <!-- قسم الباقات والضمانات -->
+                <div class="service-category-card" style="border-right-color: var(--primary-color); margin-top: 50px;">
+                    <h2 style="color: var(--heading-color); text-align: right; margin-bottom: 25px;"><i class="fas fa-clock" style="margin-left: 10px; color: var(--primary-color);"></i> الضمانات وسرعة الاستجابة</h2>
+                    <p>نلتزم بتقديم أعلى مستوى من الخدمة لعملائنا في القطاعات الحساسة مثل المستشفيات والمولات.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> **وقت استجابة طوارئ لا يتجاوز 4 ساعات**</li>
+                        <li><i class="fas fa-check-circle"></i> تقارير فحص دورية باستخدام أحدث أجهزة الكشف</li>
+                        <li><i class="fas fa-check-circle"></i> مهندسون وفنيون متخصصون على دراية بأحدث المعايير</li>
+                    </ul>
+                </div>
+
+                <!-- باقات الصيانة (من ar_services.html) -->
+                <h2 style="text-align: center; color: var(--accent-color); margin-top: 80px;">باقات الصيانة السنوية المقترحة</h2>
+
+                <div class="maintenance-packages-grid">
+                        
+                    <!-- الباقة 1: الأساسية -->
+                    <div class="package-card" style="border-top-color: #AAA;">
+                        <h4 style="color: #AAA; text-align: center; margin-bottom: 15px;">باقة (الأساسية)</h4>
+                        <p style="text-align: center; color: var(--text-light); font-weight: 700;">4 زيارات وقائية سنوية</p>
+                        <ul style="list-style: none; padding-right: 0; margin-top: 15px;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-left: 10px;"></i> تنظيف الفلاتر ووحدات التكييف</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-left: 10px;"></i> فحص مستويات الفريون</li>
+                            <li style="margin-bottom: 8px; color: #888;"><i class="fas fa-times" style="color: #888; margin-left: 10px;"></i> خصم على قطع الغيار</li>
+                        </ul>
+                        <a href="ar_contact.html" class="btn-primary" style="margin-top: 20px; width: 100%; text-align: center;">اطلب عرض سعر</a>
+                    </div>
+                    
+                    <!-- الباقة 2: الشاملة -->
+                    <div class="package-card" style="border-top-color: var(--primary-color);">
+                        <h4 style="color: var(--primary-color); text-align: center; margin-bottom: 15px;">باقة (الشاملة)</h4>
+                        <p style="text-align: center; color: var(--text-light); font-weight: 700;">6 زيارات وقائية + طوارئ</p>
+                        <ul style="list-style: none; padding-right: 0; margin-top: 15px;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-left: 10px;"></i> كل ما في الباقة الأساسية</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-left: 10px;"></i> **دعم طوارئ خلال 4 ساعات**</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-left: 10px;"></i> خصم 15% على قطع الغيار</li>
+                        </ul>
+                        <a href="ar_contact.html" class="btn-primary" style="margin-top: 20px; width: 100%; text-align: center;">اطلب عرض سعر</a>
+                    </div>
+                    
+                    <!-- الباقة 3: المتميزة -->
+                    <div class="package-card" style="border-top-color: var(--accent-color);">
+                        <h4 style="color: var(--accent-color); text-align: center; margin-bottom: 15px;">باقة (المتميزة)</h4>
+                        <p style="text-align: center; color: var(--text-light); font-weight: 700;">12 زيارة شهرية + قطع غيار</p>
+                        <ul style="list-style: none; padding-right: 0; margin-top: 15px;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-left: 10px;"></i> كل ما في الباقة الشاملة</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-left: 10px;"></i> صيانة شاملة لـ MEP (سنوية)</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-left: 10px;"></i> قطع غيار أساسية مجانية</li>
+                        </ul>
+                        <a href="ar_contact.html" class="btn-primary" style="margin-top: 20px; width: 100%; text-align: center;">اطلب عرض سعر</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Contact Buttons & Footer (Copy from index.html) -->
+    <!-- ... (content remains the same) ... -->
+    <div class="fixed-contact-buttons">
+        <a href="https://wa.me/966592862546" target="_blank" class="floating-btn whatsapp-btn" aria-label="WhatsApp Us"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+966592862546" class="floating-btn phone-btn" aria-label="Call Us"><i class="fas fa-phone-alt"></i></a>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>شركة رتم المعمار للمقاولات</h3>
+                    <p>نحن نحول الأفكار الإنشائية الطموحة إلى حقيقة. تميز في الهندسة والثقة في التنفيذ.</p>
+                    <div class="footer-social-links" style="direction: rtl; margin-top: 15px;">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul style="padding-right: 0;">
+                        <li><a href="ar_projects.html">مشاريعنا</a></li>
+                        <li><a href="ar_services.html">خدماتنا</a></li>
+                        <li><a href="ar_about.html">من نحن</a></li>
+                        <li><a href="ar_contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-contact-info" style="text-align: right;">
+                    <h3>معلومات الاتصال</h3>
+                    <p style="justify-content: flex-end; display: flex; align-items: flex-start; margin-bottom: 10px;">
+                        <span style="margin-left: 10px; line-height: 1.5;">حي العقيق، شارع الإمام سعود بن فيصل، الدفاع
+                            المدني سابقاً.</span>
+                        <i class="fas fa-map-marker-alt" style="margin-top: 5px;"></i>
+                    </p>
+                    <p style="justify-content: flex-end; display: flex; align-items: center; margin-bottom: 5px;">
+                        <span style="margin-left: 10px;">+966 59 286 2546 (مكتب)</span>
+                        <i class="fas fa-phone-alt"></i>
+                    </p>
+                    <p style="justify-content: flex-end; display: flex; align-items: center; margin-bottom: 5px;">
+                        <span style="margin-left: 10px;">+966 500 406 056 (واتساب/طوارئ)</span>
+                        <i class="fab fa-whatsapp"></i>
+                    </p>
+                    <p style="justify-content: flex-end; display: flex; align-items: center;">
+                        <span style="margin-left: 10px;">RITTM-ALMUMAR@outlook.com</span>
+                        <i class="fas fa-envelope"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; <span id="current-year">2024</span> شركة رتم المعمار للمقاولات. جميع الحقوق محفوظة.
+                <p class="designer-note">Design and programming by<a
+                        href="https://www.facebook.com/profile.php?id=100090592885243&mibextid=ZbWKwL"
+                        target="_blank"><strong>GMTWEB</strong> </p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

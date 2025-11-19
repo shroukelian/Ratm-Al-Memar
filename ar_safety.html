@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شركة رتم المعمار للمقاولات | الهندسة الحديثة والتميز</title>
+    <title>أنظمة السلامة والدفاع المدني | شركة رتم المعمار للمقاولات</title>
     <meta name="description"
         content="شركة رتم المعمار للمقاولات تقدم حلولاً هندسية وإنشائية متكاملة. خبرة في الطلاء، العزل، السفع الرملي والحماية من الحريق. الرياض، المملكة العربية السعودية.">
     <link rel="stylesheet" href="style.css">
@@ -14,38 +14,28 @@
 
     <header>
         <div class="container header-container">
-            <!-- 1. الشعار -->
             <div class="logo header-logo">
                 <a href="index.html">
-                    <img src="images/ratm-logo.png" alt="شعار شركة رتم المعمار للمقاولات"
-                        style="height: 40px; width: auto;">
+                    <img src="images/ratm-logo.png" alt="شعار شركة رتم المعمار للمقاولات" style="height: 40px; width: auto;">
                     <span>شركة رتم المعمار للمقاولات</span>
                 </a>
             </div>
-
-            <!-- 2. زر الهامبرغر (للموبايل) -->
-            <button class="hamburger-menu" aria-label="Toggle Navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-
-            <!-- 3. القائمة الرئيسية (تُستخدم للديسكتوب والقائمة المنسدلة للموبايل) -->
+            <button class="hamburger-menu" aria-label="Toggle Navigation"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
             <div class="main-nav-wrapper">
             <nav class="header-nav">
                 <ul>
-                    <li class="active"><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html">الرئيسية</a></li>
                     
-                    <!-- العنصر الرئيسي للخدمات - يتضمن قائمة متداخلة -->
-                    <li class="services-title">
-                        <a href="ar_services_overview.html">الخدمات</a>
+                    <!-- العنصر الرئيسي للخدمات - تم تحديث الروابط الداخلية -->
+                    <li class="services-title active">
+                        <a href="ar_services.html">الخدمات</a>
                         <ul>
-                            <li><a href="ar_services_civil.html">أعمال الإنشاءات</a></li>
-                            <li><a href="ar_services_mechanical.html">الأعمال الميكانيكية</a></li>
-                            <li><a href="ar_services_electrical.html">الأعمال الكهربائية</a></li>
+                            <li><a href="ar_services_civil.html">أعمال الإنشاءات المدنية</a></li>
+                            <li><a href="ar_services_electromechanical.html">أعمال الإلكتروميكانيك (MEP)</a></li>
+                            <li><a href="ar_services_hvac.html">أعمال التكييف والتهوية</a></li>
                             <li><a href="ar_safety.html">أنظمة السلامة والدفاع المدني</a></li>
                             <li><a href="ar_services_finishing.html">أعمال التشطيبات</a></li>
-                            <li><a href="ar_maintenance.html">الصيانة</a></li>
+                            <li><a href="ar_maintenance.html">الصيانة وعقود التشغيل</a></li>
                         </ul>
                     </li>
 
@@ -55,9 +45,8 @@
                 </ul>
             </nav>
             
-            <!-- أزرار الإجراءات (تبقى كما هي) -->
             <div class="header-actions-group">
-                <a href="en_home.html" class="lang-btn">English</a>
+                <a href="en_safety.html" class="lang-btn">English</a>
                 <a href="ar_contact.html" class="consultation-btn">طلب استشارة مجانية</a>
             </div>
         </div>
@@ -77,10 +66,10 @@
                     <h2 style="color: var(--heading-color); text-align: right; margin-bottom: 25px;"><i class="fas fa-box" style="margin-left: 10px; color: var(--primary-color);"></i> توريد وتركيب أجهزة ومعدات السلامة</h2>
                     <p>نقوم بتوريد وتركيب كافة المعدات والبنود التي تخص الدفاع المدني، من أنظمة إنذار وإطفاء، وأجهزة كشف الدخان، وطرق حماية الهياكل وفقاً للمعايير الدولية والمحلية.</p>
                     <ul class="service-list">
-                        <li><i class="fas fa-check-circle"></i> مكيف جداري، مكيف كاسيت، مكيف دولابي (كمعدات تكييف)</li>
-                        <li><i class="fas fa-check-circle"></i> Compressor, Valves, Filters, System Protectors</li>
                         <li><i class="fas fa-check-circle"></i> طفايات حريق يدوية (مختلفة الأنواع)</li>
                         <li><i class="fas fa-check-circle"></i> أجهزة إنذار حريق أساسية وذكية</li>
+                        <li><i class="fas fa-check-circle"></i> أنظمة إضاءة الطوارئ ومسارات الإخلاء</li>
+                        <li><i class="fas fa-check-circle"></i> دهانات الحماية من الحريق (Intumescent Paint) للهياكل الفولاذية</li>
                     </ul>
                 </div>
 
@@ -104,7 +93,13 @@
         </section>
     </main>
 
-<footer>
+    <!-- Floating Contact Buttons & Footer (Copy from index.html) -->
+    <!-- ... (content remains the same) ... -->
+    <div class="fixed-contact-buttons">
+        <a href="https://wa.me/966592862546" target="_blank" class="floating-btn whatsapp-btn" aria-label="WhatsApp Us"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+966592862546" class="floating-btn phone-btn" aria-label="Call Us"><i class="fas fa-phone-alt"></i></a>
+    </div>
+    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
@@ -129,23 +124,19 @@
 
                 <div class="footer-col footer-contact-info" style="text-align: right;">
                     <h3>معلومات الاتصال</h3>
-                    <!-- العنوان الكامل -->
                     <p style="justify-content: flex-end; display: flex; align-items: flex-start; margin-bottom: 10px;">
                         <span style="margin-left: 10px; line-height: 1.5;">حي العقيق، شارع الإمام سعود بن فيصل، الدفاع
                             المدني سابقاً.</span>
                         <i class="fas fa-map-marker-alt" style="margin-top: 5px;"></i>
                     </p>
-                    <!-- رقم المكتب (تعديل) -->
                     <p style="justify-content: flex-end; display: flex; align-items: center; margin-bottom: 5px;">
                         <span style="margin-left: 10px;">+966 59 286 2546 (مكتب)</span>
                         <i class="fas fa-phone-alt"></i>
                     </p>
-                    <!-- رقم الواتساب/الطوارئ (جديد) -->
                     <p style="justify-content: flex-end; display: flex; align-items: center; margin-bottom: 5px;">
                         <span style="margin-left: 10px;">+966 500 406 056 (واتساب/طوارئ)</span>
                         <i class="fab fa-whatsapp"></i>
                     </p>
-                    <!-- البريد الإلكتروني (تعديل) -->
                     <p style="justify-content: flex-end; display: flex; align-items: center;">
                         <span style="margin-left: 10px;">RITTM-ALMUMAR@outlook.com</span>
                         <i class="fas fa-envelope"></i>
@@ -161,6 +152,6 @@
             </div>
         </div>
     </footer>
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

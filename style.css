@@ -31,6 +31,7 @@ body {
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -1303,4 +1304,37 @@ html[dir="ltr"] .header-nav ul ul li {
         color: var(--heading-color) !important;
     }
 
+    /* --- تعديلات توسيط الأزرار داخل بطاقات الصيانة --- */
+
+.package-card .btn-primary {
+    /* التنسيقات الأساسية للزر (موجودة لديك): */
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    
+    /* التعديل لضمان توسيط الكتلة بشكل جيد */
+    display: block !important; 
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* لضمان توسيط النص بشكل كامل داخل الزر نفسه */
+.package-card .btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* نضمن أن تنسيق الزر داخل بطاقة الباقة يأخذ التوسيط الكامل */
+.package-card .btn-primary {
+    /* هذه التنسيقات لضمان توسيط النص داخل الزر نفسه */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    
+    /* لضمان أخذ الزر عرضاً كاملاً والتحكم في هوامشه في أي سياق */
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box; /* لضمان أن العرض 100% لا يتجاوز حدود البطاقة */
+}
 }

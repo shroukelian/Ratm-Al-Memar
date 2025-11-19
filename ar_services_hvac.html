@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أعمال التكييف والتهوية (HVAC) | شركة رتم المعمار للمقاولات</title>
+    <meta name="description"
+        content="حلول تكييف متكاملة (VRF، مركزي، تشيلرات، دكت) للمشاريع التجارية والصناعية، عبر فريقنا المتخصص في 'المتحدة'.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- تنسيقات خاصة لصفحة التكييف (مستوحاة من تصميم البطاقات المرفق) -->
+    <style>
+        .hvac-intro {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('images/hvac-hero.jpg');
+            /* يجب توفير صورة hvac-hero.jpg */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .hvac-intro h1 {
+            color: var(--primary-color);
+            text-shadow: 2px 2px #000;
+        }
+
+        .hvac-systems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .system-card {
+            background-color: var(--nav-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-align: right;
+        }
+
+        .system-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .system-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--accent-color);
+        }
+
+        .system-content {
+            padding: 25px;
+        }
+
+        .system-content h3 {
+            color: var(--primary-color);
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 900;
+        }
+
+        .system-content p {
+            font-size: 1em;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header (Copy from index.html) -->
+    <header>
+        <div class="container header-container">
+            <div class="logo header-logo">
+                <a href="index.html">
+                    <img src="images/ratm-logo.png" alt="شعار شركة رتم المعمار للمقاولات" style="height: 40px; width: auto;">
+                    <span>شركة رتم المعمار للمقاولات</span>
+                </a>
+            </div>
+            <button class="hamburger-menu" aria-label="Toggle Navigation"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            <div class="main-nav-wrapper">
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li class="services-title active">
+                            <a href="ar_services.html">الخدمات</a>
+                            <ul>
+                                <li><a href="ar_services_civil.html">أعمال الإنشاءات المدنية</a></li>
+                                <li><a href="ar_services_electromechanical.html">أعمال الإلكتروميكانيك (MEP)</a></li>
+                                <li><a href="ar_services_hvac.html">أعمال التكييف والتهوية</a></li>
+                                <li><a href="ar_safety.html">أنظمة السلامة والدفاع المدني</a></li>
+                                <li><a href="ar_services_finishing.html">أعمال التشطيبات</a></li>
+                                <li><a href="ar_maintenance.html">الصيانة وعقود التشغيل</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="ar_projects.html">مشاريعنا</a></li>
+                        <li><a href="ar_about.html">عن الشركة</a></li> 
+                        <li><a href="ar_contact.html">تواصل معنا</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions-group">
+                    <a href="en_services_hvac.html" class="lang-btn">English</a>
+                    <a href="ar_contact.html" class="consultation-btn">طلب استشارة مجانية</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="particles-js"></div>
+        
+        <!-- قسم المقدمة -->
+        <section class="hvac-intro" style="padding-top: 150px;">
+            <div class="container">
+                <h1 style="font-size: 3em;text-align: center;">أعمال التكييف والتهوية</h1>
+                <p style="font-size: 1.2em; max-width: 800px; margin: 20px auto;">
+                    توريد وتركيب وصيانة أنظمة التبريد والتدفئة والتهوية لضمان بيئة مثالية لكافة المشاريع التجارية والسكنية والحكومية.
+                </p>
+                <a href="ar_contact.html" class="btn-secondary" style="margin-top: 20px; display: inline-block;">اطلب استشارة تكييف</a>
+            </div>
+        </section>
+
+        <!-- قسم الأنظمة المتخصصة (بالصياغة الجديدة) -->
+        <section class="page-section" style="padding-top: 0;">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 50px;">حلول التكييف المصممة لمنشأتك</h2>
+                
+                <div class="hvac-systems-grid">
+
+                    <!-- البطاقة 1: تكييف VRF | VRV (صياغة جديدة) -->
+                    <div class="system-card">
+                        <img src="images/hvac-vrf.jpg" alt="نظام تكييف VRF">
+                        <div class="system-content">
+                            <h3>تكييف VRF | VRV</h3>
+                            <p>نظام التدفق المتغير لسائل التبريد (VRF/VRV) يمثل قمة تقنيات التبريد من حيث الكفاءة والمرونة. ننفذ حلول VRF التي تضمن أقصى توفير للطاقة وسهولة في التكييف المتعدد المناطق.</p>
+                            <a href="ar_contact.html" style="font-weight: 700;">للمزيد ←</a>
+                        </div>
+                    </div>
+
+                    <!-- البطاقة 2: التكييف المركزي (صياغة جديدة) -->
+                    <div class="system-card">
+                        <img src="images/hvac-central.jpg" alt="نظام تكييف مركزي">
+                        <div class="system-content">
+                            <h3>التكييف المركزي</h3>
+                            <p>نقدم خدمات التوريد والتركيب والصيانة لكافة أنظمة التكييف المركزي التقليدية. خبرتنا تمتد لتشمل تصميم وتوزيع الهواء البارد بشكل فعال عبر شبكات الدكت للمباني التجارية الكبرى والمرافق الحكومية.</p>
+                            <a href="ar_contact.html" style="font-weight: 700;">للمزيد ←</a>
+                        </div>
+                    </div>
+
+                    <!-- البطاقة 3: التكييف المخفي (صياغة جديدة) -->
+                    <div class="system-card">
+                        <img src="images/hvac-concealed.jpg" alt="تكييف مخفي">
+                        <div class="system-content">
+                            <h3>التكييف المخفي</h3>
+                            <p>حلول التكييف المخفي المصممة خصيصاً للمشاريع التي تتطلب دمج الأداء القوي مع الجمالية الفائقة. نوفر وحدات مخفية تضمن تبريداً مثالياً دون التأثير على التصميم الداخلي للمساحات الفاخرة.</p>
+                            <a href="ar_contact.html" style="font-weight: 700;">للمزيد ←</a>
+                        </div>
+                    </div>
+                    
+                    <!-- البطاقة 4: الدكت | Duct (صياغة جديدة) -->
+                    <div class="system-card">
+                        <img src="images/hvac-duct.jpg" alt="مجاري هواء التكييف">
+                        <div class="system-content">
+                            <h3>الدكت | Duct</h3>
+                            <p>بفضل مصنعنا الخاص، نضمن تصنيع وتركيب مجاري الهواء (الدكت) وفقاً للمواصفات القياسية العالمية (SMACNA & ASHRAE). هذه الميزة تضمن تسريع سلاسل الإمداد والتحكم المطلق في جودة المواد والأبعاد.</p>
+                            <a href="ar_contact.html" style="font-weight: 700;">للمزيد ←</a>
+                        </div>
+                    </div>
+                    
+                    <!-- البطاقة 5: مكيفات التشيلر (صياغة جديدة) -->
+                    <div class="system-card">
+                        <img src="images/hvac-chiller.jpg" alt="نظام تشيلر مركزي">
+                        <div class="system-content">
+                            <h3>مكيفات التشيلر</h3>
+                            <p>للمشاريع الضخمة التي تتطلب قدرات تبريد هائلة، نقوم بتركيب أنظمة التشيلر المركزية التي تعتمد على تبريد المياه. نقدم حلولاً مخصصة للمناطق الصناعية، والمستشفيات، والمجمعات العملاقة.</p>
+                            <a href="ar_contact.html" style="font-weight: 700;">للمزيد ←</a>
+                        </div>
+                    </div>
+                    
+                    <!-- البطاقة 6: حلول التهوية (صياغة جديدة) -->
+                    <div class="system-card">
+                        <img src="images/hvac-ventilation.jpg" alt="مراوح تهوية">
+                        <div class="system-content">
+                            <h3>حلول التهوية</h3>
+                            <p>جودة الهواء الداخلي هي أولويتنا. نقدم حلول تهوية متقدمة تشمل مراوح سحب العادم والدخان وأنظمة تنقية الهواء، مما يضمن بيئة عمل صحية وآمنة للمطابخ التجارية والمواقف المغلقة والمصانع.</p>
+                            <a href="ar_contact.html" style="font-weight: 700;">للمزيد ←</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Floating Contact Buttons & Footer (Copy from index.html) -->
+    <div class="fixed-contact-buttons">
+        <a href="https://wa.me/966592862546" target="_blank" class="floating-btn whatsapp-btn" aria-label="WhatsApp Us"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+966592862546" class="floating-btn phone-btn" aria-label="Call Us"><i class="fas fa-phone-alt"></i></a>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>شركة رتم المعمار للمقاولات</h3>
+                    <p>نحن نحول الأفكار الإنشائية الطموحة إلى حقيقة. تميز في الهندسة والثقة في التنفيذ.</p>
+                    <div class="footer-social-links" style="direction: rtl; margin-top: 15px;">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul style="padding-right: 0;">
+                        <li><a href="ar_projects.html">مشاريعنا</a></li>
+                        <li><a href="ar_services.html">خدماتنا</a></li>
+                        <li><a href="ar_about.html">من نحن</a></li>
+                        <li><a href="ar_contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-contact-info" style="text-align: right;">
+                    <h3>معلومات الاتصال</h3>
+                    <p style="justify-content: flex-end; display: flex; align-items: flex-start; margin-bottom: 10px;">
+                        <span style="margin-left: 10px; line-height: 1.5;">حي العقيق، شارع الإمام سعود بن فيصل، الدفاع
+                            المدني سابقاً.</span>
+                        <i class="fas fa-map-marker-alt" style="margin-top: 5px;"></i>
+                    </p>
+                    <p style="justify-content: flex-end; display: flex; align-items: center; margin-bottom: 5px;">
+                        <span style="margin-left: 10px;">+966 59 286 2546 (مكتب)</span>
+                        <i class="fas fa-phone-alt"></i>
+                    </p>
+                    <p style="justify-content: flex-end; display: flex; align-items: center; margin-bottom: 5px;">
+                        <span style="margin-left: 10px;">+966 500 406 056 (واتساب/طوارئ)</span>
+                        <i class="fab fa-whatsapp"></i>
+                    </p>
+                    <p style="justify-content: flex-end; display: flex; align-items: center;">
+                        <span style="margin-left: 10px;">RITTM-ALMUMAR@outlook.com</span>
+                        <i class="fas fa-envelope"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; <span id="current-year">2024</span> شركة رتم المعمار للمقاولات. جميع الحقوق محفوظة.
+                <p class="designer-note">Design and programming by<a
+                        href="https://www.facebook.com/profile.php?id=100090592885243&mibextid=ZbWKwL"
+                        target="_blank"><strong>GMTWEB</strong> </p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
