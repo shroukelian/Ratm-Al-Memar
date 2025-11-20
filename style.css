@@ -203,7 +203,14 @@ header .container {
 
 /* Hero Section */
 #hero {
-    background-image: linear-gradient(rgba(0, 191, 165, 0.2), rgba(44, 62, 80, 0.7)), url('images/home.webp');
+    /* التعديل هنا: دمج اللون الأساسي مع لون داكن هادئ لضمان وضوح النص الأبيض */
+    background-image: linear-gradient(
+        to top, /* بدأنا من الأسفل للأعلى لتركيز التعتيم على الأسفل */
+        rgba(0, 0, 0, 0.75), /* لون داكن جداً من الأسفل */
+        rgba(0, 191, 165, 0.3) /* لون الـ Primary Color بشفافية خفيفة من الأعلى */
+    ), 
+    url('images/مشاريع\ كامله\ .jpeg'); /* تأكد من أن اسم الملف صحيح */
+    
     background-size: cover;
     background-position: center;
     color: white;
@@ -211,6 +218,7 @@ header .container {
     min-height: 85vh;
     display: flex;
     align-items: center;
+    /* التعديل التالي ضروري لضمان محاذاة المحتوى بشكل صحيح في اتجاه RTL */
     justify-content: flex-start;
     text-align: right;
 }
