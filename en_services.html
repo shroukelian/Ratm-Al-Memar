@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="ltr">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integrated Engineering Services | Ratm Al-Memar Contracting</title>
+    <title>Integrated Engineering Services | Ratm Al-Mimar Contracting Co.</title>
     <meta name="description"
-        content="Ratm Al-Memar's comprehensive general contractor services: Civil works, Mechanical systems, Electrical systems, and Final Finishing.">
+        content="Comprehensive General Contractor services from Ratm Al-Mimar: Construction, Mechanical Systems, Electrical Systems, and Final Finishing.">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Note: You might prefer 'Roboto' for English, but Cairo works -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
-        /* Additional styles for the Services page */
+        /* English Specific Overrides */
+        body { font-family: sans-serif; }
+
         .service-category-card {
             background-color: var(--nav-bg);
             padding: 40px;
             border-radius: 10px;
             margin-bottom: 30px;
-            border-left: 5px solid var(--primary-color);
-            /* Changed to border-left for LTR */
+            /* Changed from border-right to border-left for LTR */
+            border-left: 5px solid var(--primary-color); 
+            border-right: none;
             transition: border-left-color 0.3s;
         }
 
@@ -35,8 +39,7 @@
 
         .service-list {
             list-style: none;
-            padding-left: 0;
-            /* Changed to padding-left for LTR */
+            padding-left: 0; /* Changed from padding-right */
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 15px 30px;
@@ -48,16 +51,15 @@
             font-size: 1em;
             display: flex;
             align-items: flex-start;
-            text-align: left;
-            /* Aligns text left for LTR */
         }
 
         .service-list li i {
             color: var(--primary-color);
-            margin-right: 10px;
-            /* Changed to margin-right for LTR */
+            margin-right: 10px; /* Changed from margin-left */
             margin-top: 5px;
         }
+        
+        .header-actions-group { gap: 15px; }
     </style>
 </head>
 
@@ -65,20 +67,17 @@
 
     <header>
         <div class="container header-container">
-            <!-- 1. Logo -->
             <div class="logo header-logo">
                 <a href="en_home.html">
-                    <img src="images/ratm-logo.png" alt="Ratm Al-Memar Contracting Company Logo"
+                    <img src="images/ratm-logo.png" alt="Ratm Al-Mimar Contracting Company Logo"
                         style="height: 40px; width: auto;">
-                    <span>Ratm Al-Memar Contracting Co.</span>
+                    <span>Ratm Al-Mimar Contracting</span>
                 </a>
             </div>
 
-            <!-- 2. Hamburger Menu -->
             <button class="hamburger-menu" aria-label="Toggle Navigation"><span class="bar"></span><span
                     class="bar"></span><span class="bar"></span></button>
 
-            <!-- 3. Main Navigation -->
             <div class="main-nav-wrapper">
                 <nav class="header-nav">
                     <ul>
@@ -92,8 +91,9 @@
                     </ul>
                 </nav>
                 <div class="header-actions-group">
+                    <!-- Link back to Arabic -->
                     <a href="ar_services.html" class="lang-btn">العربية</a>
-                    <!-- <a href="en_contact.html" class="consultation-btn">Free Consultation</a> -->
+                    <!-- <a href="en_contact.html" class="consultation-btn">Request Free Consultation</a> -->
                 </div>
             </div>
         </div>
@@ -104,120 +104,114 @@
         <div id="particles-js"></div>
         <section class="page-section" style="padding-top: 120px;">
             <div class="container">
-                <h1 style="text-align: center;">Comprehensive General Contractor Services: From Foundation to Operation</h1>
+                <h1 style="text-align: center;">Integrated General Contractor Services: From Foundation to Operation</h1>
                 <p style="text-align: center; max-width: 900px; margin: 0 auto 50px auto; color: var(--heading-color);">
-                    We are a general contracting company based in Riyadh, specializing in integrated project execution. We are committed to the highest standards of quality and safety, seeking client satisfaction in every project.
+                    We are a general contracting company based in Riyadh, specializing in integrated project execution. We adhere to the highest quality and safety standards and strive for client satisfaction in every project.
                 </p>
 
-                <!-- **CORE SERVICES (The 5 Core Services)** -->
                 <div style="margin-bottom: 80px;">
                     
-                    <!-- 1. Excavation & Structural Works -->
                     <div class="service-category-card">
                         <h3 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 10px;"><i class="fas fa-hammer" style="margin-right: 10px;"></i> 1. Excavation & Structural Works</h3>
                         <ul class="service-list">
-                            <li><i class="fas fa-check-circle"></i> Excavation, Backfilling & Site Preparation</li>
-                            <li><i class="fas fa-check-circle"></i> Execution of Foundations and Concrete Bases</li>
-                            <li><i class="fas fa-check-circle"></i> Reinforced Concrete Works (Columns, Slabs, Beams)</li>
-                            <li><i class="fas fa-check-circle"></i> Block & Masonry Works (Internal and External Walls)</li>
+                            <li><i class="fas fa-check-circle"></i> Excavation, backfilling, and site preparation</li>
+                            <li><i class="fas fa-check-circle"></i> Execution of foundations and concrete bases</li>
+                            <li><i class="fas fa-check-circle"></i> Reinforced concrete works (Columns, Slabs, Beams)</li>
+                            <li><i class="fas fa-check-circle"></i> Blockwork and brickwork (Internal and External walls)</li>
                         </ul>
                     </div>
 
-                    <!-- 2. Mechanical Works -->
                     <div class="service-category-card">
-                        <h3 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 10px;"><i class="fas fa-cogs" style="margin-right: 10px;"></i> 2. Mechanical Works</h3>
+                        <h3 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 10px;"><i class="fas fa-cogs" style="margin-right: 10px;"></i> 2. Electromechanical Works (MEP)</h3>
+                        <p style="font-size: 1.1em; font-weight: 700;">Integrated execution of mechanical and electrical systems (excluding HVAC) ensuring optimal coordination.</p>
                         <ul class="service-list">
-                            <li><i class="fas fa-check-circle"></i> Air Conditioning and Ventilation Systems (HVAC)</li>
-                            <li><i class="fas fa-check-circle"></i> Plumbing Systems (Hot and Cold Water)</li>
-                            <li><i class="fas fa-check-circle"></i> Drainage and Storm Water Systems</li>
-                            <li><i class="fas fa-check-circle"></i> Fire Fighting and Water Supply Systems (Piping & Pumps)</li>
+                            <li><i class="fas fa-check-circle"></i> Low and Medium Voltage distribution</li>
+                            <li><i class="fas fa-check-circle"></i> Distribution panels, control, and lighting</li>
+                            <li><i class="fas fa-check-circle"></i> Plumbing, sewage, and stormwater drainage systems</li>
+                            <li><i class="fas fa-check-circle"></i> Earthing and lightning protection systems</li>
                         </ul>
                     </div>
 
-                    <!-- 3. Electrical Works -->
-                    <div class="service-category-card">
-                        <h3 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 10px;"><i class="fas fa-bolt" style="margin-right: 10px;"></i> 3. Electrical Works</h3>
-                        <ul class="service-list">
-                            <li><i class="fas fa-check-circle"></i> Low and Medium Voltage Wiring (Power Distribution)</li>
-                            <li><i class="fas fa-check-circle"></i> Distribution Panels, Control Panels, and Lighting</li>
-                            <li><i class="fas fa-check-circle"></i> Grounding and Lightning Protection Systems</li>
-                            <li><i class="fas fa-check-circle"></i> UPS (Uninterruptible Power Supply) and BMS Systems</li>
+                    <div class="service-category-card" style="border-left-color: var(--accent-color);">
+                        <h3 style="border-bottom: 2px solid var(--primary-color); padding-bottom: 10px;"><i class="fas fa-wind" style="margin-right: 10px;"></i> 3. HVAC & Ventilation Works</h3>
+                        <p>Our main specialization is in HVAC for major buildings and commercial facilities. You can explore our scope in detail.</p>
+                        <ul class="service-list" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                            <li><i class="fas fa-check-circle"></i> Central AC and Chillers</li>
+                            <li><i class="fas fa-check-circle"></i> VRF / VRV Systems</li>
+                            <li><i class="fas fa-check-circle"></i> Duct fabrication and installation</li>
+                            <li><i class="fas fa-check-circle"></i> Ventilation and smoke extraction systems</li>
                         </ul>
+                        <div style="text-align: right; margin-top: 20px;">
+                            <a href="en_services_hvac.html" class="btn-primary" style="padding: 8px 20px; font-size: 1em;">View All HVAC Solutions <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                     
-                    <!-- 4. Safety and Civil Defense Systems -->
                     <div class="service-category-card">
-                        <h3 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 10px;"><i class="fas fa-fire-extinguisher" style="margin-right: 10px;"></i> 4. Safety and Civil Defense Systems</h3>
+                        <h3 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 10px;"><i class="fas fa-fire-extinguisher" style="margin-right: 10px;"></i> 4. Safety & Civil Defense Systems</h3>
                         <ul class="service-list">
-                            <li><i class="fas fa-check-circle"></i> Supply and Installation of Certified Fire Alarm & Extinguishing Systems</li>
-                            <li><i class="fas fa-check-circle"></i> Smoke Control and Staircase Pressurization Systems</li>
-                            <li><i class="fas fa-check-circle"></i> Civil Defense Approval and Licensing</li>
+                            <li><i class="fas fa-check-circle"></i> Supply and installation of approved fire alarm and fighting systems</li>
+                            <li><i class="fas fa-check-circle"></i> Smoke control and staircase pressurization systems</li>
+                            <li><i class="fas fa-check-circle"></i> Obtaining Civil Defense approval and licensing for the project</li>
                         </ul>
                     </div>
 
-                    <!-- 5. Finishing Works -->
                     <div class="service-category-card">
                         <h3 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 10px;"><i class="fas fa-paint-roller" style="margin-right: 10px;"></i> 5. Finishing Works</h3>
                         <ul class="service-list">
-                            <li><i class="fas fa-check-circle"></i> Flooring and Wall Finishes (Tiles, Marble, Paints)</li>
-                            <li><i class="fas fa-check-circle"></i> False Ceilings, Glass, and Door Works</li>
-                            <li><i class="fas fa-check-circle"></i> Water and Thermal Insulation Works</li>
-                            <li><i class="fas fa-check-circle"></i> All Internal and External Finishing Works</li>
+                            <li><i class="fas fa-check-circle"></i> Flooring and wall works (Tiles, Marble, Paint)</li>
+                            <li><i class="fas fa-check-circle"></i> False ceilings, glass, and doors</li>
+                            <li><i class="fas fa-check-circle"></i> Waterproofing and thermal insulation</li>
+                            <li><i class="fas fa-check-circle"></i> All interior and exterior finishing works</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- **SECTION 6: MAINTENANCE** -->
-                <h2 style="text-align: center; margin-bottom: 40px;">6. Maintenance Division: Operational Sustainability Contracts</h2>
+                <h2 style="text-align: center; margin-bottom: 40px;">6. Maintenance & Operational Sustainability Division</h2>
 
-                <!-- Maintenance Packages -->
                 <div class="service-category-card" style="border-left-color: var(--accent-color);">
-                    <h3 style="border-bottom: 2px solid var(--primary-color); padding-bottom: 10px;"><i class="fas fa-tools" style="margin-right: 10px;"></i> Scope of Specialized Contracts</h3>
+                    <h3 style="border-bottom: 2px solid var(--primary-color); padding-bottom: 10px;"><i class="fas fa-tools" style="margin-right: 10px;"></i> Specialized Contracts Scope</h3>
                     <ul class="service-list" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-                        <li><i class="fas fa-shield-alt"></i> Comprehensive Safety and Civil Defense Systems Maintenance Contracts</li>
-                        <li><i class="fas fa-snowflake"></i> Maintenance Contracts for HVAC, Ventilation, and Cooling Systems</li>
-                        <li><i class="fas fa-building"></i> Full Building Maintenance Contracts for Commercial and Residential Facilities</li>
+                        <li><i class="fas fa-shield-alt"></i> Comprehensive Safety & Civil Defense maintenance</li>
+                        <li><i class="fas fa-snowflake"></i> HVAC & Refrigeration maintenance contracts</li>
+                        <li><i class="fas fa-building"></i> Comprehensive maintenance for buildings, commercial, and residential facilities</li>
                     </ul>
                     
                     <h3 style="color: var(--accent-color); margin-top: 40px; text-align: center;">Suggested Annual Maintenance Packages</h3>
-                    <p style="text-align: center; color: var(--text-light);">Pricing is customized based on the type and size of the facility, guaranteeing a rapid response time of no more than 4 hours.</p>
+                    <p style="text-align: center; color: var(--text-light);">Prices are customized based on facility type and size, with a guaranteed response time not exceeding 4 hours.</p>
                     
                     <div class="maintenance-packages-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 30px;">
                         
-                        <!-- Package 1: Basic -->
                         <div class="package-card" style="background-color: var(--bg-dark); padding: 25px; border-radius: 10px; border-top: 4px solid #AAA;">
                             <h4 style="color: #AAA; text-align: center; margin-bottom: 15px;">Basic Package</h4>
-                            <p style="text-align: center; color: var(--text-light); font-weight: 700;">4 Preventive Visits Per Year</p>
+                            <p style="text-align: center; color: var(--text-light); font-weight: 700;">4 Preventive Visits Annually</p>
                             <ul style="list-style: none; padding-left: 0; margin-top: 15px;">
-                                <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> Filter Cleaning & HVAC Unit Check</li>
-                                <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> Refrigerant Level Check</li>
-                                <li style="margin-bottom: 8px; color: #888;"><i class="fas fa-times" style="color: #888; margin-right: 10px;"></i> Discount on Spare Parts</li>
+                                <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> Filter & unit cleaning</li>
+                                <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> Freon level check</li>
+                                <li style="margin-bottom: 8px; color: #888;"><i class="fas fa-times" style="color: #888; margin-right: 10px;"></i> Spare parts discount</li>
                             </ul>
-                            <a href="en_contact.html" class="btn-primary" style="margin-top: 20px; width: 100%; text-align: center;">Request A Quote</a>
+                            <a href="en_contact.html" class="btn-primary" style="margin-top: 20px; width: 100%; text-align: center; ">Request Quote</a>
                         </div>
                         
-                        <!-- Package 2: Comprehensive -->
                         <div class="package-card" style="background-color: var(--bg-dark); padding: 25px; border-radius: 10px; border-top: 4px solid var(--primary-color);">
                             <h4 style="color: var(--primary-color); text-align: center; margin-bottom: 15px;">Comprehensive Package</h4>
-                            <p style="text-align: center; color: var(--text-light); font-weight: 700;">6 Preventive Visits + Emergency Support</p>
+                            <p style="text-align: center; color: var(--text-light); font-weight: 700;">6 Preventive Visits + Emergency</p>
                             <ul style="list-style: none; padding-left: 0; margin-top: 15px;">
                                 <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> Everything in Basic Package</li>
-                                <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> **4-Hour Emergency Response**</li>
-                                <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> 15% Discount on Spare Parts</li>
+                                <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> **Emergency support within 4 hours**</li>
+                                <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> 15% Discount on spare parts</li>
                             </ul>
-                            <a href="en_contact.html" class="btn-primary" style="margin-top: 20px; width: 100%; text-align: center;">Request A Quote</a>
+                            <a href="en_contact.html" class="btn-primary" style="margin-top: 20px; width: 100%; text-align: center; ">Request Quote</a>
                         </div>
                         
-                        <!-- Package 3: Premium -->
                         <div class="package-card" style="background-color: var(--bg-dark); padding: 25px; border-radius: 10px; border-top: 4px solid var(--accent-color);">
                             <h4 style="color: var(--accent-color); text-align: center; margin-bottom: 15px;">Premium Package</h4>
-                            <p style="text-align: center; color: var(--text-light); font-weight: 700;">12 Monthly Visits + Free Parts</p>
+                            <p style="text-align: center; color: var(--text-light); font-weight: 700;">12 Monthly Visits + Spare Parts</p>
                             <ul style="list-style: none; padding-left: 0; margin-top: 15px;">
                                 <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> Everything in Comprehensive Package</li>
-                                <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> Annual Full MEP System Check</li>
-                                <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> Basic Spare Parts Included (Free)</li>
+                                <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> Annual MEP maintenance</li>
+                                <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> Free basic spare parts</li>
                             </ul>
-                            <a href="en_contact.html" class="btn-primary" style="margin-top: 20px; width: 100%; text-align: center;">Request A Quote</a>
+                            <a href="en_contact.html" class="btn-primary" style="margin-top: 20px; width: 100%; text-align: center; ">Request Quote</a>
                         </div>
                     </div>
                 </div>
@@ -225,73 +219,70 @@
             </div>
         </section>
     </main>
+
     <!-- Floating Contact Buttons -->
     <div class="fixed-contact-buttons">
-        <!-- WhatsApp Button (Using Emergency Number) -->
-        <a href="https://wa.me/966500406056" target="_blank" class="floating-btn whatsapp-btn" aria-label="WhatsApp Us">
+        <a href="https://wa.me/966592862546" target="_blank" class="floating-btn whatsapp-btn" aria-label="WhatsApp Us">
             <i class="fab fa-whatsapp"></i>
         </a>
-        <!-- Phone Button (Using Office Number) -->
         <a href="tel:+966592862546" class="floating-btn phone-btn" aria-label="Call Us">
             <i class="fas fa-phone-alt"></i>
         </a>
     </div>
+    
     <footer>
-    <div class="container">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h3>Ratm Al-Memar Contracting Co.</h3>
-                <p>We transform ambitious construction ideas into reality. Excellence in engineering and trust in execution.</p>
-                <div class="footer-social-links" style="direction: ltr; margin-top: 15px;">
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Ratm Al-Mimar Contracting</h3>
+                    <p>We turn ambitious construction ideas into reality. Excellence in engineering and trust in execution.</p>
+                    <div class="footer-social-links" style="direction: ltr; margin-top: 15px;">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul style="padding-left: 0;">
+                        <li><a href="en_projects.html">Our Projects</a></li>
+                        <li><a href="en_services.html">Services</a></li>
+                        <li><a href="en_about.html">About Us</a></li>
+                        <li><a href="en_contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-contact-info" style="text-align: left;">
+                    <h3>Contact Info</h3>
+                    <!-- Adjusted alignment and icon position for English -->
+                    <p style="justify-content: flex-start; display: flex; align-items: flex-start; margin-bottom: 10px;">
+                        <i class="fas fa-map-marker-alt" style="margin-top: 5px; margin-right: 10px;"></i>
+                        <span style="line-height: 1.5;">Al Aqiq Dist., Imam Saud bin Faisal St., formerly Civil Defense.</span>
+                    </p>
+                    <p style="justify-content: flex-start; display: flex; align-items: center; margin-bottom: 5px;">
+                        <i class="fas fa-phone-alt" style="margin-right: 10px;"></i>
+                        <span>+966 59 286 2546 (Office)</span>
+                    </p>
+                    <p style="justify-content: flex-start; display: flex; align-items: center; margin-bottom: 5px;">
+                        <i class="fab fa-whatsapp" style="margin-right: 10px;"></i>
+                        <span>+966 500 406 056 (WhatsApp/Emergency)</span>
+                    </p>
+                    <p style="justify-content: flex-start; display: flex; align-items: center;">
+                        <i class="fas fa-envelope" style="margin-right: 10px;"></i>
+                        <span>RITTM-ALMUMAR@outlook.com</span>
+                    </p>
                 </div>
             </div>
 
-            <div class="footer-col">
-                <h3>Quick Links</h3>
-                <ul style="padding-left: 0;">
-                    <li><a href="en_projects.html">Projects</a></li>
-                    <li><a href="en_services.html">Services</a></li>
-                    <li><a href="en_about.html">About Us</a></li>
-                    <li><a href="en_contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col footer-contact-info" style="text-align: left;">
-                <h3>Contact Information</h3>
-                <!-- Full Address -->
-                <p style="justify-content: flex-start; display: flex; align-items: flex-start; margin-bottom: 10px;">
-                    <i class="fas fa-map-marker-alt" style="margin-right: 10px; margin-top: 5px;"></i>
-                    <span style="margin-left: 10px; line-height: 1.5;">Al Aqeeq District, Imam Saud Bin Faisal St., former Civil Defense site.</span>
-                </p>
-                <!-- Office Number -->
-                <p style="justify-content: flex-start; display: flex; align-items: center; margin-bottom: 5px;">
-                    <i class="fas fa-phone-alt" style="margin-right: 10px;"></i>
-                    <span style="margin-left: 10px;">+966 59 286 2546 (Office)</span>
-                </p>
-                <!-- WhatsApp/Emergency Number -->
-                <p style="justify-content: flex-start; display: flex; align-items: center; margin-bottom: 5px;">
-                    <i class="fab fa-whatsapp" style="margin-right: 10px;"></i>
-                    <span style="margin-left: 10px;">+966 500 406 056 (WhatsApp/Emergency)</span>
-                </p>
-                <!-- Email -->
-                <p style="justify-content: flex-start; display: flex; align-items: center;">
-                    <i class="fas fa-envelope" style="margin-right: 10px;"></i>
-                    <span style="margin-left: 10px;">RITTM-ALMUMAR@outlook.com</span>
-                </p>
+            <div class="copyright">
+                &copy; <span id="current-year">2024</span> Ratm Al-Mimar Contracting Co. All Rights Reserved.
+                <p class="designer-note">Design and programming by <a
+                        href="https://www.facebook.com/profile.php?id=100090592885243&mibextid=ZbWKwL"
+                        target="_blank"><strong>GMTWEB</strong></a> </p>
             </div>
         </div>
-
-        <div class="copyright">
-            &copy; <span id="current-year">2024</span> Ratm Al-Memar Contracting Co. All rights reserved.
-            <p class="designer-note">Design and programming by <a
-                    href="https://www.facebook.com/profile.php?id=100090592885243&mibextid=ZbWKwL"
-                    target="_blank"><strong>GMTWEB</strong></a></p>
-        </div>
-    </div>
-</footer>
+    </footer>
     <script src="main.js"></script>
 </body>
 
