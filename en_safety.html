@@ -5,28 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safety & Civil Defense Systems | RITTM ALMUMAR Contracting</title>
     <meta name="description"
-        content="Rittm Almumar Contracting provides integrated safety, fire protection, and civil defense compliance solutions for commercial and office facilities in Riyadh, Saudi Arabia.">
+        content="Integrated solutions for fire suppression, alarm systems, staircase pressurization, and smoke extraction, including plan approval from Civil Defense.">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Replicating the safety systems card styles for LTR */
+        .safety-systems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .safety-card {
+            background-color: var(--nav-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-align: left; /* Changed for LTR */
+        }
+
+        .safety-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .safety-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--primary-color);
+        }
+
+        .safety-content {
+            padding: 25px;
+        }
+
+        .safety-content h3 {
+            color: var(--accent-color);
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 900;
+        }
+
+        .safety-content p {
+            font-size: 1em;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+    </style>
 </head>
 <body>
 
     <header>
+        <!-- ... (Header Code updated for English navigation) ... -->
         <div class="container header-container">
             <div class="logo header-logo">
                 <a href="en_home.html">
-                    <img src="images/ratm-logo.png" alt="Rittm Almumar Contracting Company Logo" style="height: 40px; width: auto;">
+                    <img src="images/ratm-logo.png" alt="Rittm Almumar Contracting Company Logo"
+                        style="height: 40px; width: auto;">
                     <span>RITTM ALMUMAR Contracting</span>
                 </a>
             </div>
-            <button class="hamburger-menu" aria-label="Toggle Navigation"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            <button class="hamburger-menu" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             <div class="main-nav-wrapper">
             <nav class="header-nav">
                 <ul>
                     <li><a href="en_home.html">Home</a></li>
-                    
-                    <!-- Services Menu -->
                     <li class="services-title active">
                         <a href="en_services.html">Services</a>
                         <ul>
@@ -38,13 +90,11 @@
                             <li><a href="en_maintenance.html">Maintenance & Operation Contracts</a></li>
                         </ul>
                     </li>
-
                     <li><a href="en_projects.html">Projects</a></li>
                     <li><a href="en_about.html">About Us</a></li> 
                     <li><a href="en_contact.html">Contact Us</a></li>
                 </ul>
             </nav>
-            
             <div class="header-actions-group">
                 <a href="ar_safety.html" class="lang-btn">العربية</a>
                 <a href="en_contact.html" class="consultation-btn">Request Free Consultation</a>
@@ -52,51 +102,103 @@
         </div>
     </div>
 </header>
-  <main>
-        <div id="particles-js"></div>
-        <section class="page-section" style="padding-top: 120px; background-color: var(--bg-dark);">
-            <div class="container">
-                <h1 style="text-align: center;">Safety and Civil Defense Systems</h1>
-                <p style="text-align: center; max-width: 900px; margin: 0 auto 50px auto; color: var(--text-light);">
-                    We are your approved partner to ensure the highest standards of safety and protection in commercial and office facilities, with full commitment to Civil Defense requirements.
-                </p>
 
-                <!-- System and Equipment Supply Section -->
-                <div class="service-category-card" style="border-left-color: var(--accent-color); border-right: none;">
-                    <h2 style="color: var(--heading-color); text-align: left; margin-bottom: 25px;"><i class="fas fa-box" style="margin-right: 10px; color: var(--primary-color);"></i> Supply and Installation of Safety Equipment</h2>
-                    <p>We supply and install all equipment and items required by the Civil Defense, including alarm and extinguishing systems, smoke detectors, and structural protection methods in accordance with international and local standards.</p>
-                    <ul class="service-list" style="padding-left: 0;">
-                        <li><i class="fas fa-check-circle"></i> Manual fire extinguishers (various types)</li>
-                        <li><i class="fas fa-check-circle"></i> Basic and smart fire alarm devices</li>
-                        <li><i class="fas fa-check-circle"></i> Emergency lighting and evacuation route systems</li>
-                        <li><i class="fas fa-check-circle"></i> Fire Protection Coatings (Intumescent Paint) for steel structures</li>
-                    </ul>
+<main>
+    <div id="particles-js"></div>
+    <section class="page-section" style="padding-top: 120px; background-color: var(--bg-dark);">
+        <div class="container">
+            <h1 style="text-align: center;">Integrated Safety and Civil Defense Solutions</h1>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 50px auto; color: var(--text-light);">
+                Your approved partner to ensure a secure environment for vital and commercial facilities, from system supply to obtaining necessary licenses.
+            </p>
+
+            <!-- 1. Plans Approval and Licensing Section (Static Section) -->
+            <div class="service-category-card" style="border-left-color: var(--accent-color); border-right: none; margin-bottom: 60px;">
+                <h2 style="color: var(--heading-color); text-align: left; margin-bottom: 25px;"><i class="fas fa-stamp" style="margin-right: 10px; color: var(--primary-color);"></i> Plans Approval and Civil Defense Licenses</h2>
+                <p>We undertake on behalf of the client the preparation and approval of safety plans in engineering offices accredited by the Civil Defense. This includes obtaining and renewing the Civil Defense license according to their requirements, ensuring the project proceeds with minimal bureaucratic obstacles.</p>
+                <ul class="service-list" style="list-style: none; padding-left: 0; margin-top: 20px;">
+                    <li><i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 10px;"></i> Submitting documents and requirements to finalize safety site service procedures</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 10px;"></i> Obtaining and renewing Civil Defense and Municipality licenses</li>
+                </ul>
+            </div>
+
+            <!-- 2. Grid of Eight Advanced Safety Systems -->
+            <h2 style="text-align: center; margin-bottom: 50px;">Advanced Fire Protection and Suppression Systems (8 Solutions)</h2>
+
+            <div class="safety-systems-grid">
+
+                <!-- System 2: Automatic Sprinkler Fire Suppression System -->
+                <div class="safety-card">
+                    <img src="images/٢ نظام الرشّ الالي.jpeg" alt="Automatic Sprinkler System">
+                    <div class="safety-content">
+                        <h3>2. Automatic Sprinkler Fire Suppression</h3>
+                        <p>An automatic fire suppression system that detects fire and immediately extinguishes it by spraying water through approved sprinkler networks.</p>
+                    </div>
                 </div>
 
-                <!-- Licensing and Approval Section -->
-                <div class="service-category-card" style="border-left-color: var(--accent-color); border-right: none; margin-top: 50px;">
-                    <h2 style="color: var(--heading-color); text-align: left; margin-bottom: 25px;"><i class="fas fa-stamp" style="margin-right: 10px; color: var(--primary-color);"></i> Plans Approval and Civil Defense Licenses</h2>
-                    <p>We undertake on behalf of the client the preparation and approval of safety plans in engineering offices accredited by the Civil Defense. This includes obtaining and renewing the Civil Defense license according to their requirements, ensuring the project proceeds with minimal bureaucratic obstacles.</p>
-                    <ul class="service-list" style="padding-left: 0;">
-                        <li><i class="fas fa-check-circle"></i> Submission of necessary documents and requirements to finalize safety site service procedures</li>
-                        <li><i class="fas fa-check-circle"></i> Obtaining and renewing Civil Defense and Municipality licenses</li>
-                    </ul>
+                <!-- System 3: Clean Agent Fire Suppression FM200 -->
+                <div class="safety-card">
+                    <img src="images/نظام fm200.jpeg" alt="FM200 Gas Suppression System">
+                    <div class="safety-content">
+                        <h3>3. Clean Agent Suppression FM200</h3>
+                        <p>An advanced suppression system that uses FM200 gas, leaving no residue and being safe for sensitive electronic equipment like server rooms.</p>
+                    </div>
                 </div>
                 
-                <!-- Advanced Protection Systems Section -->
-                <div class="service-category-card" style="border-left-color: var(--accent-color); border-right: none; margin-top: 50px;">
-                    <h2 style="color: var(--heading-color); text-align: left; margin-bottom: 25px;"><i class="fas fa-fire-extinguisher" style="margin-right: 10px; color: var(--primary-color);"></i> Advanced Extinguishing and Control Systems</h2>
-                    <p>We design and install integrated fire extinguishing systems (sprinklers, UL/FM pumps, piping networks), in addition to advanced early detection alarm systems, and smoke management systems to ensure protection and adequate time for evacuation.</p>
+                <!-- System 4: Foam Suppression System -->
+                <div class="safety-card">
+                    <img src="images/نظام الإطفاء بالفوم.jpeg" alt="Foam Suppression System">
+                    <div class="safety-content">
+                        <h3>4. Foam Suppression System</h3>
+                        <p>A specialized system for extinguishing flammable liquid fires with effective chemical foam, used in industrial facilities and fuel storage areas.</p>
+                    </div>
+                </div>
+
+                <!-- System 5: Fire Alarm System -->
+                <div class="safety-card">
+                    <img src="images/نظام إنذار الحريق.jpeg" alt="Advanced Fire Alarm System">
+                    <div class="safety-content">
+                        <h3>5. Fire Alarm System</h3>
+                        <p>An advanced system for automatic fire and smoke detection, issuing an immediate alarm, connected to the evacuation system and relevant authorities.</p>
+                    </div>
+                </div>
+
+                <!-- System 6: Staircase Pressurization System -->
+                <div class="safety-card">
+                    <img src="images/نظام تضغيط الدرج.jpeg" alt="Staircase Pressurization System">
+                    <div class="safety-content">
+                        <h3>6. Staircase Pressurization System</h3>
+                        <p>A specialized system that maintains positive pressure in stairwells to prevent smoke ingress during a fire, ensuring a safe evacuation route.</p>
+                    </div>
+                </div>
+                
+                <!-- System 7: Smoke Extraction System -->
+                <div class="safety-card">
+                    <img src="images/نظام سحب الدخان smoke management.jpeg" alt="Smoke Extraction and Ventilation System">
+                    <div class="safety-content">
+                        <h3>7. Smoke Extraction System</h3>
+                        <p>An advanced system that automatically extracts smoke and toxic gases from the building using powerful fans to ensure visibility and aid fire fighting efforts.</p>
+                    </div>
                 </div>
 
             </div>
-        </section>
-    </main>
+            
+            <!-- 3. Concluding Slide (Your Trusted Partner) -->
+            <div class="service-category-card" style="border-left-color: var(--primary-color); border-right: none; margin-top: 60px; text-align: center;">
+                <h2 style="color: var(--accent-color); margin-bottom: 20px;text-align: center;">Your Trusted Partner in Safety Systems</h2>
+                <p style="max-width: 800px; margin: 0 auto; font-size: 1.1em; font-weight: 700;">
+                    We are committed to implementing the highest NFPA and UL/FM standards to ensure your facility has complete protection and the necessary Civil Defense licensing.
+                </p>
+            </div>
 
-    <!-- Floating Contact Buttons & Footer (Copy from index.html) -->
+        </div>
+    </section>
+</main>
+
+    <!-- Floating Contact Buttons & Footer (Unchanged) -->
     <div class="fixed-contact-buttons">
-        <a href="https://wa.me/966592862546" target="_blank" class="floating-btn whatsapp-btn" aria-label="WhatsApp Us"><i class="fab fa-whatsapp"></i></a>
-        <a href="tel:+966592862546" class="floating-btn phone-btn" aria-label="Call Us"><i class="fas fa-phone-alt"></i></a>
+        <a href="https://wa.me/966592686215" target="_blank" class="floating-btn whatsapp-btn" aria-label="WhatsApp Us"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+0112413338" class="floating-btn phone-btn" aria-label="Call Us"><i class="fas fa-phone-alt"></i></a>
     </div>
     <footer>
         <div class="container">
